@@ -1,11 +1,17 @@
 asgiref==3.8.1
 dj-database-url==0.5.0
+<<<<<<< HEAD
 Django==4.2.1
 django-allauth==0.63.1
+=======
+Django==5.0.6
+>>>>>>> e08e04e040d0a594332a16b88ad76f09ce9a78f5
 djangorestframework==3.15.1
-gunicorn==20.1.0
 psycopg2==2.9.9
-setuptools==70.0.0
 sqlparse==0.5.0
+<<<<<<< HEAD
 tzdata==2024.1
 whitenoise==6.5.0
+=======
+whitenoise==5.3.0
+>>>>>>> e08e04e040d0a594332a16b88ad76f09ce9a78f5
