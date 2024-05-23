@@ -37,6 +37,9 @@ ALLOWED_HOSTS = ['127.0.0.1',
 
 INSTALLED_APPS = [
     'accounts',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
