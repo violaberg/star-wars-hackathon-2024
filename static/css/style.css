@@ -1,3 +1,14 @@
+body {
+    background-color: #00050f;
+}
+
+.brand {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #3cff32;
+}
+
 .navbar-custom {
     border-radius: 15px;
 }
