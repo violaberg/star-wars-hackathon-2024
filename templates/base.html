@@ -1,72 +1,67 @@
 {% load static %}
-
-{% url 'home' as home_url %}
+{% url 'index' as index_url %}
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Goggle Fonts CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Share+Tech+Mono&family=Sigmar&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome CSS -->
+    <title>Star Wars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-5 my-3 navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">App Name</span></a>
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'images/yoda_logo.png' %}" width="50" height="50" alt="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'index' %}"><i class="fas fa-index"></i> Home</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
+                            href="#"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
+                            href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
+                            href="#"><i class="fas fa-question-circle"></i> FAQs</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="flex-shrink-0 main-bg">
-
-        {% block content %}
-        <!-- Content Goes here -->
-
-        
-        {% endblock content %}
-
-    </main>
-
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}  
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">
-      {% block copyright %}Made by ...{% endblock copyright %}
-</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
-        </p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
-        <script src="{% static 'js/script.js' %}"></script>
 </body>
+<!-- Bootstrap JS and Popper.js -->
+<!-- Bootstrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>
