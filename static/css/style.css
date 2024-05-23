@@ -11,4 +11,17 @@ body {
 
 .navbar-custom {
     border-radius: 15px;
+    /* padding: 20px 0px; */
+}
+
+.footer-area{
+    padding: 20px 0px;
+    color: #fff;
+}
+
+.footer-underline{
+    height: 1px;
+    width: 70px;
+    background-color: #ddd;
+    margin: 10px auto;
 }
