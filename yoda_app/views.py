@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("May the Force be with you!")
+    return render(
+        request,
+        "yoda_app/index.html",
+    )
