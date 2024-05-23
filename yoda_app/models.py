@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
@@ -32,3 +31,18 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+
+
+class FAQ(models.Model):
+
+    class Meta:
+        """
+        Customizes the display name of the category in the admin panel.
+        """
+        verbose_name_plural = 'Frequently Asked Questions'
+
+    question = models.CharField(max_length=255)
+    answer = models.TextField()
+
+    def __str__(self):
+        return self.question
