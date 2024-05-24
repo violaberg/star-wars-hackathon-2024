@@ -9,10 +9,18 @@ from .models import FAQ
 
 
 # Create your views here.
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(is_published=True)
-    template_name = 'yoda_app/index.html'
-    context_object_name = 'posts'
+#class PostList(generic.ListView):
+#    queryset = Post.objects.filter(is_published=True)
+#    template_name = 'yoda_app/index.html'
+#    context_object_name = 'posts'
+def index(request):
+    """ A view to return the home page"""
+    return render(request, "yoda_app/index.html")
+
+
+def about(request):
+    """ A view to return the about page"""
+    return render(request, "yoda_app/about.html")
 
 
 def faq(request):
