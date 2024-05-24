@@ -14,7 +14,15 @@
     </div>
     <div class="row">
         <div class="col-md-8 mt-4 offset-md-2 text-center">F
-
+            <form method="post" action="{% url 'account_logout' %}">
+                {% csrf_token %}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+                {% endif %}
+                <button class="btn btn-danger hvr-grow mt-4" type="submit">{% trans 'Sign Out' %}</button>
+                <br>
+                <a class="btn btn-secondary mb-5 hvr-grow mt-5" href="{% url 'index' %}">Back</a>
+            </form>
         </div>
     </div>
 </div>
