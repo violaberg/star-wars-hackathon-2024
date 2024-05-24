@@ -35,7 +35,6 @@ body {
 
 .navbar-custom {
     border-radius: 15px;
-    /* padding: 20px 0px; */
 }
 
 .footer-area {
@@ -65,6 +64,85 @@ a.link {
 
 a.link:hover {
     color: var(--holo-cyan);
+}
+
+/* Buttons */
+.neon-button-blue {
+    background-color: transparent;
+    border: 3px solid var(--holo-cyan);
+    border-radius: 5px;
+    color: var(--holo-cyan);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--holo-cyan),
+        0 0 10px var(--holo-cyan),
+        inset 0 0 5px var(--holo-cyan),
+        inset 0 0 10px var(--holo-cyan);
+}
+
+.neon-button-blue:hover {
+    box-shadow: 0 0 15px var(--holo-cyan),
+        0 0 20px var(--holo-cyan),
+        inset 0 0 10px var(--holo-cyan),
+        inset 0 0 15px var(--holo-cyan);
+    color: var(--lightsaber-green);
+}
+
+.neon-button-red {
+    background-color: transparent;
+    border: 3px solid var(--sith-red);
+    border-radius: 5px;
+    color: var(--sith-red);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--sith-red),
+        0 0 10px var(--sith-red),
+        inset 0 0 5px var(--sith-red),
+        inset 0 0 10px var(--sith-red);
+}
+
+.neon-button-red:hover {
+    box-shadow: 0 0 15px var(--sith-red),
+        0 0 20px var(--sith-red),
+        inset 0 0 10px var(--sith-red),
+        inset 0 0 15px var(--sith-red);
+    color: var(--blaze-orange);
+}
+
+.neon-button-green {
+    background-color: transparent;
+    border: 3px solid var(--lightsaber-green);
+    border-radius: 5px;
+    color: var(--lightsaber-green);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--lightsaber-green),
+        0 0 10px var(--lightsaber-green),
+        inset 0 0 5px var(--lightsaber-green),
+        inset 0 0 10px var(--lightsaber-green);
+}
+
+.neon-button-green:hover {
+    box-shadow: 0 0 15px var(--lightsaber-green),
+        0 0 20px var(--lightsaber-green),
+        inset 0 0 10px var(--lightsaber-green),
+        inset 0 0 15px var(--lightsaber-green);
+    color: var(--tatooine-yellow);
 }
 
 /* Home page */
@@ -97,11 +175,6 @@ span.slogan {
         0 0 5px #00ff00,
         0 0 10px #00ff00,
         0 0 20px #00ff00;
-}
-
-.session-button {
-    background-color: var(--starfield-white);
-
 }
 
 /* About page */
