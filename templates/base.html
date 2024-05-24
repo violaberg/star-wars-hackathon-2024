@@ -6,7 +6,6 @@
 <html class="h-100" lang="en">
 
 <head>
-    <title>Star Wars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
@@ -31,6 +30,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %}Star Wars{% endblock %}</title>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">

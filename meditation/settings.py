@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  '.herokuapp.com','8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-94lha5s7s7n.ws-eu114.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-violaberg-starwarshacka-94lha5s7s7n.ws-eu114.gitpod.io'
+    'https://8000-violaberg-starwarshacka-94lha5s7s7n.ws-eu114.gitpod.io', 'https://8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io'
 ]
 
 # Application definition
@@ -50,13 +50,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'yoda_app',
+    'session'
 ]
 
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

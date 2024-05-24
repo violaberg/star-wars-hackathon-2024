@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<h1>Meditation Begins</h1>
+<p>Session Name: {{ session_name }}</p>
+<p>Character: {{ character }}</p>
+<p>Username: {{ username }}</p>
+<p>Level: {{ level }}</p>
+
+{% endblock content %}

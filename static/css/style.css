@@ -24,6 +24,7 @@ body {
 body {
     background-color: var(--deep-blue);
     font-family: "Share Tech Mono", monospace;
+    color: white;
 }
 
 .brand {
