@@ -1,5 +1,3 @@
-
-
 :root {
     --deep-blue: #00050f;
     --tatooine-yellow: #ffcc00;
@@ -10,6 +8,17 @@
     --droid-silver: #c0c0c0;
     --starfield-white: #f6f6f7;
     --void-grey: #101313;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 body {
@@ -29,12 +38,12 @@ body {
     /* padding: 20px 0px; */
 }
 
-.footer-area{
+.footer-area {
     padding: 20px 0px;
     color: #fff;
 }
 
-.footer-underline{
+.footer-underline {
     height: 1px;
     width: 70px;
     background-color: #ddd;
@@ -58,24 +67,48 @@ span.slogan {
 .hero-img {
     border: 5px solid var(--starfield-white);
     border-radius: 50%;
-    box-shadow: 
-        0 0 10px var(--sith), /* Outer shadow (red) */
-        0 0 10px var(--lightsaber), /* Outer shadow (green) */
-        0 0 10px var(--tatooine), /* Outer shadow (yellow) */
-        inset 0 0 10px var(--sith), /* Inner shadow (red) */
-        inset 0 0 10px var(--lightsaber), /* Inner shadow (green) */
-        inset 0 0 10px var(--tatooine); /* Inner shadow (yellow) */
+    box-shadow:
+        0 0 10px var(--sith),
+        /* Outer shadow (red) */
+        0 0 10px var(--lightsaber),
+        /* Outer shadow (green) */
+        0 0 10px var(--tatooine),
+        /* Outer shadow (yellow) */
+        inset 0 0 10px var(--sith),
+        /* Inner shadow (red) */
+        inset 0 0 10px var(--lightsaber),
+        /* Inner shadow (green) */
+        inset 0 0 10px var(--tatooine);
+    /* Inner shadow (yellow) */
 }
 
 .glowing-text {
     color: var(--lightsaber-green);
-    text-shadow: 
-    0 0 5px #00ff00,
-    0 0 10px #00ff00,
-    0 0 20px #00ff00;
+    text-shadow:
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 20px #00ff00;
 }
 
 .session-button {
     background-color: var(--starfield-white);
 
+}
+
+/* About page */
+.about-container {
+    text-align: justify;
+}
+
+.about-section {
+    color: var(--tatooine-yellow);
+    text-align: center;
+}
+
+.about-content {
+    color: var(--starfield-white);
+}
+
+p > span {
+    color: var(--holo-cyan);
 }
