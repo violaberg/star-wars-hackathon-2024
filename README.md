@@ -1,7 +1,5 @@
 
-# APP NAME 
 
-**A May 2024 CodeInstitute Hackathon Project**
 
 **By TEAM NAME**
 
