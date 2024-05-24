@@ -13,7 +13,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-5 my-3 navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'images/yoda_logo.png' %}" width="50" height="50" alt="logo">
+                <img src="{% static 'images/yoda_logo.png' %}" width="50" height="50" alt="logo"> STAR WARS
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +53,44 @@
             </div>
         </div>
     </nav>
-    {% block content %}
-    <!-- Content Goes here -->
-    {% endblock content %}  
+    <!-- Main content -->
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
     <!-- Footer -->
+    <div class="footer-area navbar-dark bg-dark mx-5 my-3 navbar-custom fixed-bottom">
+        <div class="container-fluid">
+            <div class="text-center">
+                <a class="navbar-brand text-xl" href="{% url 'index' %}">
+                    <p class="display-6">Star Wars</p>
+                </a>
+            </div>
+            <div class="footer-underline text-cen"></div>
+            <div class="text-center">
+                <span>
+                    <a class="navbar-brand" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                </span>       
+            </div>
+        </div>
+    </div>
 </body>
 <!-- Bootstrap JS and Popper.js -->
 <!-- Bootstrap 5 -->
