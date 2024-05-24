@@ -24,6 +24,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -80,39 +85,39 @@
             {% endblock content %}
         </main>
     </div>
-        <!-- Footer -->
-        <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
-            <div class="container-fluid">
-                <div class="text-center">
-                    <a class="navbar-brand text-xl" href="{% url 'index' %}">
-                        <p class="display-6">INNER FORCE</p>
-                    </a>
-                </div>
-                <div class="footer-underline text-cen"></div>
-                <div class="text-center">
-                    <span>
-                        <a class="navbar-brand" href="https://www.facebook.com/">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a class="navbar-brand ms-3" href="https://www.instagram.com/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
-                            <i class="fa-brands fa-spotify"></i>
-                        </a>
-                    </span>
-                </div>
+    <!-- Footer -->
+    <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
+        <div class="container-fluid">
+            <div class="text-center">
+                <a class="navbar-brand text-xl" href="{% url 'index' %}">
+                    <p class="display-6">INNER FORCE</p>
+                </a>
             </div>
-        </footer>
+            <div class="footer-underline text-cen"></div>
+            <div class="text-center">
+                <span>
+                    <a class="navbar-brand" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
 </body>
 <!-- Bootstrap JS and Popper.js -->
 <!-- Bootstrap 5 -->
