@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load static %}
 {% url 'index' as index_url %}
 
@@ -10,10 +11,13 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -49,6 +53,15 @@
                         <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
                             href="#"><i class="fas fa-question-circle"></i> FAQs</a>
                     </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
@@ -87,7 +100,7 @@
                     <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
                         <i class="fa-brands fa-spotify"></i>
                     </a>
-                </span>       
+                </span>
             </div>
         </div>
     </div>
@@ -95,7 +108,10 @@
 <!-- Bootstrap JS and Popper.js -->
 <!-- Bootstrap 5 -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
 </html>

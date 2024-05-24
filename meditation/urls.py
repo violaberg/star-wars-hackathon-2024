@@ -22,4 +22,5 @@ from yoda_app import views as index_views
 urlpatterns = [
     path('', index_views.PostList.as_view(), name='index'),
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),
 ]
