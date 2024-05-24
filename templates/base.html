@@ -51,9 +51,13 @@
                             href="#"><i class="fas fa-question-circle"></i> FAQs</a>
                     </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out"
+                            %}</a></li>
                     {% else %}
-                    
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+                    </li>
                     {% endif %}
                 </ul>
             </div>
