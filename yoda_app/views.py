@@ -13,14 +13,14 @@ from .models import FAQ
 #    queryset = Post.objects.filter(is_published=True)
 #    template_name = 'yoda_app/index.html'
 #    context_object_name = 'posts'
-def home(request):
+def index(request):
     """ A view to return the home page"""
-    return render(request, "index.html")
+    return render(request, "yoda_app/index.html")
 
 
 def about(request):
     """ A view to return the about page"""
-    return render(request, "about.html")
+    return render(request, "yoda_app/about.html")
 
 
 def faq(request):
