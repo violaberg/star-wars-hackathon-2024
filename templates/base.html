@@ -33,8 +33,8 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-2 my-3 navbar-custom">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo" class="logo">
+                <a class="glowing-text navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo" class="logo">INNER FORCE
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,9 +85,12 @@
         <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
             <div class="container-fluid">
                 <div class="text-center">
-                    <a class="navbar-brand text-xl" href="{% url 'index' %}">
-                        <p class="display-6">INNER FORCE</p>
-                    </a>
+                    <p class="text-center mb-0">
+                        <a href="{% url 'faq' %}" target="_blank"
+                            class="footer-link text-decoration-none">FAQ</a><br>
+                        <a href="#" target="_blank"
+                            class="footer-link text-decoration-none">Privacy Policy</a>
+                    </p>
                 </div>
                 <div class="footer-underline text-cen"></div>
                 <div class="text-center">
@@ -111,6 +114,7 @@
                             <i class="fa-brands fa-spotify"></i>
                         </a>
                     </span>
+                    <p class="mb-0">All Rights Reserved 2024<a href="{% url 'index' %}" class="footer-content font-weight-normal px-2 text-decoration-none">INNER FORCE</a></p>
                 </div>
             </div>
         </footer>
