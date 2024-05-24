@@ -38,6 +38,22 @@
                         placeholder="enter your email address here" minlength="1" maxlength="320">
                 </div>
                 <br>
+                <div>
+                    {{ form.password1.errors }}
+                    <label for="id_password1">Password</label>
+                    <input type="password" class="form-control" name="password1" id="id_password1"
+                        placeholder="enter your new password here" minlength="5" maxlength="50" required>
+                </div>
+                <br>
+                <div>
+                    {{ form.password2.errors }}
+                    <label for="id_password2">Password</label>
+                    <input type="password" class="form-control" name="password2" id="id_password2"
+                        placeholder="confirm your entered password" minlength="5" maxlength="50" required>
+                </div>
+                <button class="btn btn-signup right btn-secondary hvr-grow mt-4 mb-5" type="submit">
+                    {% trans "Sign Up"%}&raquo;
+                </button>
             </form>
         </div>
     </div>
