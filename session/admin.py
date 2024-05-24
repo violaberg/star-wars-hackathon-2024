@@ -4,9 +4,6 @@ from .models import Session
 
 @admin.register(Session)
 class SessionAdmin(admin.ModelAdmin):
-    """
-    Lists fields for display in admin, fileds for search,
-    field filters, fields to prepopulate and rich-text editor.
-    """
-    list_display = ('session_name', 'slug', 'created_on')
-    prepopulated_fields = {'slug': ('session_name',)}
+
+    list_display = ('session_name', 'created_on')
+    # prepopulated_fields = {'slug': ('session_name',)}
