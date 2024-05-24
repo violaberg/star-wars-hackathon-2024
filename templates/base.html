@@ -43,7 +43,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                            href="#"><i class="fas fa-info-circle"></i> About</a>
+                            href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
@@ -51,7 +51,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
-                            href="#"><i class="fas fa-question-circle"></i> FAQs</a>
+                            href="{% url 'faq' %}"><i class="fas fa-question-circle"></i> FAQs</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
