@@ -19,6 +19,11 @@
     <!-- Hover CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -26,10 +31,10 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-5 my-3 navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-2 my-3 navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'images/yoda_logo.png' %}" width="50" height="50" alt="logo"> STAR WARS
+                <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +59,8 @@
                             href="{% url 'faq' %}"><i class="fas fa-question-circle"></i> FAQs</a>
                     </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out"
+                            %}</a>
                     </li>
                     {% else %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
@@ -72,11 +78,11 @@
         {% endblock content %}
     </main>
     <!-- Footer -->
-    <div class="footer-area navbar-dark bg-dark mx-5 my-3 navbar-custom fixed-bottom">
+    <div class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
         <div class="container-fluid">
             <div class="text-center">
                 <a class="navbar-brand text-xl" href="{% url 'index' %}">
-                    <p class="display-6">Star Wars</p>
+                    <p class="display-6">INNER FORCE</p>
                 </a>
             </div>
             <div class="footer-underline text-cen"></div>
