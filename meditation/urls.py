@@ -20,7 +20,7 @@ from yoda_app import views as index_views
 
 
 urlpatterns = [
-    path('', index_views.PostList.as_view(), name='index'),
+    path('', include('yoda_app.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
 ]
