@@ -58,6 +58,15 @@ h2 {
     color: var(--lightsaber-green);
 }
 
+a.link {
+    color: var(--deep-blue);
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: var(--holo-cyan);
+}
+
 /* Home page */
 span.slogan {
     color: var(--tatooine-yellow);
@@ -109,6 +118,17 @@ span.slogan {
     color: var(--starfield-white);
 }
 
-p > span {
+p>span {
     color: var(--holo-cyan);
+}
+
+.card {
+    background-color: var(--droid-silver);
+    border: 5px solid var(--holo-cyan);
+}
+
+.card-title {
+    background-color: var(--void-grey);
+    color: var(--blaze-orange);
+    padding: 1rem;
 }
