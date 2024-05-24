@@ -1,1 +1,1 @@
-web: gunicorn yoda_app.wsgi
+web: gunicorn yoda_app.wsgi --log-file -

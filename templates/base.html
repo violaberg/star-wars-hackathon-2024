@@ -18,65 +18,79 @@
     <!-- Hover CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>{% block title %}Star Wars{% endblock %}</title>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-5 my-3 navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'images/yoda_logo.png' %}" width="50" height="50" alt="logo"> STAR WARS
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'index' %}"><i class="fas fa-index"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
-                            href="#"><i class="fas fa-envelope"></i> Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'faq' %}"><i class="fas fa-question-circle"></i> FAQs</a>
-                    </li>
-                    {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
-                    </li>
-                    {% else %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
-                    </li>
-                    {% endif %}
-                </ul>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-2 my-3 navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'index' %}"><i class="fas fa-index"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == contact_url %}active{% endif %}"
+                                aria-current="page" href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'faq' %}"><i class="fas fa-question-circle"></i> FAQs</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out"
+                                %}</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In"
+                                %}</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up"
+                                %}</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- Main content -->
-    <main>
-        {% block content %}
-        {% endblock content %}
-    </main>
+        </nav>
+        <!-- Main content -->
+        <main class="h-100 my-3">
+            {% block content %}
+            {% endblock content %}
+        </main>
+    </div>
     <!-- Footer -->
-    <div class="footer-area navbar-dark bg-dark mx-5 my-3 navbar-custom fixed-bottom">
+    <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
         <div class="container-fluid">
             <div class="text-center">
                 <a class="navbar-brand text-xl" href="{% url 'index' %}">
-                    <p class="display-6">Star Wars</p>
+                    <p class="display-6">INNER FORCE</p>
                 </a>
             </div>
             <div class="footer-underline text-cen"></div>
@@ -103,7 +117,7 @@
                 </span>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 <!-- Bootstrap JS and Popper.js -->
 <!-- Bootstrap 5 -->
