@@ -146,27 +146,29 @@ a.link:hover {
 }
 
 /* Home page */
-span.slogan {
+.slogan {
     color: var(--tatooine-yellow);
     font-style: italic;
 }
 
 .hero-img {
-    border: 5px solid var(--starfield-white);
+    border: 7px solid var(--starfield-white);
     border-radius: 50%;
     box-shadow:
-        0 0 10px var(--sith),
-        /* Outer shadow (red) */
-        0 0 10px var(--lightsaber),
-        /* Outer shadow (green) */
-        0 0 10px var(--tatooine),
-        /* Outer shadow (yellow) */
-        inset 0 0 10px var(--sith),
-        /* Inner shadow (red) */
-        inset 0 0 10px var(--lightsaber),
-        /* Inner shadow (green) */
-        inset 0 0 10px var(--tatooine);
-    /* Inner shadow (yellow) */
+        10px 0 20px var(--sith-red),
+        -10px 0 20px var(--lightsaber-green),
+        0 10px 20px var(--tatooine-yellow),
+        0 -10px 20px var(--tatooine-yellow),
+        10px 0 25px var(--sith-red),
+        -10px 0 25px var(--lightsaber-green),
+        0 10px 25px var(--tatooine-yellow),
+        0 -10px 25px var(--tatooine-yellow),
+        inset 10px 0 20px var(--lightsaber-green),
+        inset -10px 0 10px var(--sith-red),
+        inset 0 10px 10px var(--tatooine-yellow),
+        inset 0 -10px 10px var(--tatooine-yellow);
+    margin: 2rem 0;
+    padding: 1rem;
 }
 
 .glowing-text {
