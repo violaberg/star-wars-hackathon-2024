@@ -1,1 +1,1 @@
-web: gunicorn meditation.wsgi --log-file -
+web: gunicorn yoda_app.wsgi --log-file -
