@@ -16,7 +16,29 @@
     </div>
     <div class="row">
         <div class="col-md-8 offset-md-2">
-
+            {{ form.non_field_errors }}
+            <form class="signup form-group fieldWrapper" id="signup_form" method="post"
+                action="{% url 'account_signup' %}">
+                {% csrf_token %}
+                <div>
+                    {{ form.login.errors }}
+                </div>
+                <div>
+                    {{ form.username.errors }}
+                    <label for="id_username">Username</label>
+                    <input type="text" class="form-control" name="username"
+                        placeholder="&#xf007; enter your full name here" id="id_username" minlength="1" maxlength="150"
+                        required>
+                </div>
+                <br>
+                <div>
+                    {{ form.email.errors }}
+                    <label for="id_email">E-mail (optional)</label>
+                    <input type="email" class="form-control" name="email" id="id_email"
+                        placeholder="enter your email address here" minlength="1" maxlength="320">
+                </div>
+                <br>
+            </form>
         </div>
     </div>
 </div>
