@@ -7,6 +7,16 @@
 
 {% block content %}
 <div class="container">
-
+    <div class="row">
+        <div class="col-md-8 mt-5 offset-md-2">
+            <h2 class="fs-1">{% trans "Sign in to Star Wars" %}</h2>
+            <p class="fs-5">{% blocktrans %}Welcome back to Star Wars. Please log in to continue from where you left
+                off. If
+                you
+                do not have an account yet, then <a class="link text-decoration-none" href="{{ signup_url }}">sign
+                    up</a>
+                first.{% endblocktrans %}</p>
+        </div>
+    </div>
 </div>
 {% endblock %}
