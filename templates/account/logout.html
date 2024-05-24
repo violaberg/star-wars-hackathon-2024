@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 mt-4 offset-md-2 text-center">F
+        <div class="col-md-8 mt-4 offset-md-2 text-center">
             <form method="post" action="{% url 'account_logout' %}">
                 {% csrf_token %}
                 {% if redirect_field_value %}
