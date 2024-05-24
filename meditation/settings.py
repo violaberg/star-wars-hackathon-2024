@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'yoda_app',
+    'session'
 ]
 
 SITE_ID = 1
