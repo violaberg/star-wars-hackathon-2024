@@ -30,7 +30,7 @@ body {
     font-family: "Share Tech Mono", monospace;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #3cff32;
+    color: var(--lightsaber-green);
 }
 
 .navbar-custom {
@@ -40,13 +40,13 @@ body {
 
 .footer-area {
     padding: 20px 0px;
-    color: #fff;
+    color: var(--starfield-white);
 }
 
 .footer-underline {
     height: 1px;
     width: 70px;
-    background-color: #ddd;
+    background-color: var(--droid-silver);
     margin: 10px auto;
 }
 
