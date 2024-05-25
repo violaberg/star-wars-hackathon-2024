@@ -51,6 +51,19 @@ We aim to:
 
 ### **Colours**
 
+    --galactic-blue: #00050F;
+    --tatooine-yellow: #FFCC00;
+    --blaze-orange: #FF8C00;
+    --sith-red: #FF0000;
+    --holo-cyan: #00FFFF;
+    --lightsaber-green: #00FF00;
+    --droid-silver: #C0C0C0;
+    --starfield-white: #F6F6F7;
+    --void-grey: #101313
+
+<br><br>
+![ColourPalette](static/images/color-palette.png)
+<br><br>
 ### **Typography**
 
 ### **Wireframes**
