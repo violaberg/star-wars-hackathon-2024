@@ -291,18 +291,19 @@ label {
 
 /* FAQ page */
 .accordion-item {
-    background-color: var(--droid-silver);
+    background-color: var(--holo-cyan);
 }
 
 .accordion-button.collapsed,
 .accordion-button:not(.collapsed) {
-    background: var(--droid-silver);
-    color: var(--blaze-orange);
+    background: var(--void-grey);
+    color: var(--tatooine-yellow);
 }
 
 .accordion-body {
-    background-color: var(--starfield-white);
-    color: var(--tatooine-yellow);
+    background-color: var(--droid-silver);
+    color: var(--galactic-blue);
+    text-align: justify;
 }
 
 /* Session app */
