@@ -99,6 +99,29 @@ a.nav-link:hover {
     color: var(--blaze-orange);
 }
 
+.footer-link:hover {
+    color: var(--blaze-orange);
+}
+
+.fa-spotify:hover,
+.fa-youtube:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: var(--blaze-orange);
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+.no-underline {
+    text-decoration: none !important;
+}
 /* Buttons */
 .neon-button-blue {
     background-color: transparent;
