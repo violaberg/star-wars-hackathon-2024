@@ -1,5 +1,5 @@
 :root {
-    --deep-blue: #00050f;
+    --galactic-blue: #00050f;
     --tatooine-yellow: #ffcc00;
     --blaze-orange: #ff8c00;
     --sith-red: #ff0000;
@@ -22,7 +22,7 @@ body {
 }
 
 body {
-    background-color: var(--deep-blue);
+    background-color: var(--galactic-blue);
     font-family: "Share Tech Mono", monospace;
     color: var(--starfield-white);
 }
@@ -36,7 +36,7 @@ h2 {
 }
 
 a.link {
-    color: var(--deep-blue);
+    color: var(--galactic-blue);
     text-decoration: none;
 }
 
