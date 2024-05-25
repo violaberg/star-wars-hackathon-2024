@@ -8,10 +8,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2 mt-4">
-            <h2 class="fs-1 text-white">{% trans "Sign up for Star Wars" %}</h2>
-            <p class="fs-5 text-white">{% blocktrans %}Welcome to Star Wars. If you already have an account? Then please <a
-                    class="link text-decoration-none" href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}
-            </p>
+            <h2 class="text-center fs-1">{% trans "Sign up for Star Wars" %}</h2>
+            <p class="account-p fs-5">{% blocktrans %}Welcome to Star Wars. If you already have an account? Then please <a
+                class="account-link text-decoration-none" href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}
+        </p>
         </div>
     </div>
     <div class="row">
@@ -25,35 +25,36 @@
                 </div>
                 <div>
                     {{ form.username.errors }}
-                    <label for="id_username" class="text-white">Username</label>
-                    <input type="text" class="form-control" name="username"
-                        placeholder="enter your full name here" id="id_username" minlength="1" maxlength="150"
-                        required>
+                    <label for="id_username">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="enter your full name here"
+                        id="id_username" minlength="1" maxlength="150" required>
                 </div>
                 <br>
                 <div>
                     {{ form.email.errors }}
-                    <label for="id_email" class="text-white">E-mail (optional)</label>
+                    <label for="id_email">E-mail (optional)</label>
                     <input type="email" class="form-control" name="email" id="id_email"
                         placeholder="enter your email address here" minlength="1" maxlength="320">
                 </div>
                 <br>
                 <div>
                     {{ form.password1.errors }}
-                    <label for="id_password1" class="text-white">Password</label>
+                    <label for="id_password1">Password</label>
                     <input type="password" class="form-control" name="password1" id="id_password1"
                         placeholder="enter your new password here" minlength="5" maxlength="50" required>
                 </div>
                 <br>
                 <div>
                     {{ form.password2.errors }}
-                    <label for="id_password2" class="text-white">Password</label>
+                    <label for="id_password2">Password</label>
                     <input type="password" class="form-control" name="password2" id="id_password2"
                         placeholder="confirm your entered password" minlength="5" maxlength="50" required>
                 </div>
-                <button class="btn btn-signup right btn-secondary hvr-grow mt-4 mb-5" type="submit">
-                    {% trans "Sign Up"%}&raquo;
-                </button>
+                <div class="text-center">
+                    <button class="neon-button-blue btn btn-signup hvr-grow mt-4 mb-5" type="submit">
+                        {% trans "Sign Up"%}&raquo;
+                    </button>
+                </div>
             </form>
         </div>
     </div>

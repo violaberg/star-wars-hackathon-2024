@@ -63,7 +63,7 @@ a.nav-link:hover {
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--lightsaber-green);
+    color: var(--tatooine-yellow);
 }
 
 /* Footer */
@@ -238,4 +238,25 @@ p>span {
     background-color: var(--void-grey);
     color: var(--blaze-orange);
     padding: 1rem;
+}
+
+/* Account pages */
+.account-p {
+    color: var(--tatooine-yellow);
+}
+
+.account-danger {
+    color: var(--sith-red);
+}
+
+.account-link {
+    color: var(--sith-red);
+}
+
+.account-link:hover {
+    color: var(--blaze-orange);
+}
+
+label {
+    color: var(--droid-silver);
 }
