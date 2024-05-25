@@ -1,13 +1,17 @@
 
 
-# **INNER FORCE**  
+# **INNER FORCE** 
 
 
+<center><img src ="static/images/yoda-logo-readme-PLACEHOLDER.png" width="300px" height="300px" alt="Yoda meditating"></center>
 
+<br>
 
 > "*Of the moment, be. In the moment, live. The art of remaining in the present, learn. Neither the past nor the future exists.*"
 >
 > Master Yoda  
+
+<br>
 
 <hr>
 
@@ -17,9 +21,9 @@ Our unique meditation app harnesses the cutting-edge Hemi-Sync technology to syn
 
 
 
-![AmIResponsive](images/AmIResponsive-PLACEHOLDER.png)  
+![AmIResponsive](static/images/AmIResponsive-PLACEHOLDER.png)
 
-
+<br>
 
 ## Criteria
 Our team addressed the following Hackathon criteria with innovative solutions:
@@ -30,11 +34,7 @@ Our team addressed the following Hackathon criteria with innovative solutions:
 - Project demonstrates **responsiveness**, **accessibility**, and thorough **testing**.
 - Fun and entertaining **presentation**.  
 
-
-
-
 <hr>
-
 
 # **ABOUT SUBMISSION**
 
@@ -89,8 +89,36 @@ We aim to:
 
 ## **The Team**
 
+Viola Bergere - SCRUM Master
+[LinkedIn](https://www.linkedin.com/in/viola-bergere-5a668699/) | [GitHub](https://github.com/violaberg)
+
+Fernando Goncalves
+[LinkedIn](https://www.linkedin.com/in/fernando-goncalves2202/) | [GitHub](https://github.com/Goncalves95)
+
+Samuel Anderson
+[LinkedIn](https://www.linkedin.com/in/samuel-anderson-codes/) | [GitHub](https://github.com/samuelandersoncodes)
+
+Muhammad Bilal
+[LinkedIn](https://www.linkedin.com/in/muhammad-bilal-91a1869a/) | [GitHub](https://github.com/MBilalQureshi)
+
+Amanda Mascurine
+[LinkedIn](https://www.linkedin.com/in/amanda-mascurine/) | [GitHub](https://github.com/AmandaCIdev)
+
+Kati Molnar
+[LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com/molnarlin)
+
+Katarina Nadia
+[LinkedIn](https://linkedin.com/k-nadia) | [GitHub](https://github.com/k-nadia)
+
+Craig Allen
+[LinkedIn](https://www.linkedin.com/in/craig-allen-dev/) | [GitHub](https://github.com/craigallendev)
+
+
 ## Credits
 Special thanks to:
 
 - **CodeInstitute** for organizing the Hackathon.
 
+
+
+[def]: images/AmIResponsive-PLACEHOLDER.png
