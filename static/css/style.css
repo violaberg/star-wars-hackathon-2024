@@ -261,3 +261,16 @@ p>span {
 label {
     color: var(--droid-silver);
 }
+
+/* FAQ page */
+.faq-card {
+    background-color: var(--droid-silver);
+}
+
+.faq-section {
+    border: 3px solid var(--blaze-orange);
+}
+
+.faq-card-header {
+    color: var(--deep-blue);
+}
