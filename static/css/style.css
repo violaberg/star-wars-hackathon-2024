@@ -67,6 +67,18 @@ a.link:hover {
     color: var(--holo-cyan);
 }
 
+.img-hover-zoom {
+    overflow: hidden;
+}
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+.no-underline {
+    text-decoration: none !important;
+}
 /* Buttons */
 .neon-button-blue {
     background-color: transparent;
