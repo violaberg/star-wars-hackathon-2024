@@ -32,7 +32,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="icon" href="{% static 'favicon/favicon.ico' %}">
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
@@ -96,7 +96,7 @@
             <div class="text-center">
                 <p class="text-center mb-0">
                     <a href="{% url 'faq' %}" target="_blank" class="footer-link text-decoration-none">FAQ</a><br>
-                    <a href="#" target="_blank" class="footer-link text-decoration-none">Privacy Policy</a>
+                    <a href="{% url 'privacy_policy' %}" target="_blank" class="footer-link text-decoration-none">Privacy Policy</a>
                 </p>
             </div>
             <div class="footer-underline text-cen"></div>
