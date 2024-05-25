@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h2 class="text-center">Articles and Resources</h2>
+
+<div class="article-container mx-auto">
+    <div class="row mx-auto">
+        {% for article in articles %}
+        <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title text-center">{{ article.title }}</h3>
+                    <p class="card-text">
+                        {{ article.body }}
+                    </p>
+                    <a href="{{ article.link }}" class="link"><i
+                            class="icon px-2 fa-solid fa-link"></i>Read More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
