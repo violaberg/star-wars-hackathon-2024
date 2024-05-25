@@ -232,11 +232,11 @@ a.nav-link:hover {
 }
 
 .glowing-text {
-    color: var(--lightsaber-green);
+    color: var(--starfield-white);
     text-shadow:
-        0 0 5px #f6f6f7,
-        0 0 10px #f6f6f7,
-        0 0 20px #f6f6f7;
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 20px #00ff00;
 }
 
 /* About page */
@@ -290,16 +290,19 @@ label {
 }
 
 /* FAQ page */
-.faq-card {
+.accordion-item {
     background-color: var(--droid-silver);
 }
 
-.faq-section {
-    border: 3px solid var(--blaze-orange);
+.accordion-button.collapsed,
+.accordion-button:not(.collapsed) {
+    background: var(--droid-silver);
+    color: var(--blaze-orange);
 }
 
-.faq-card-header {
-    color: var(--deep-blue);
+.accordion-body {
+    background-color: var(--starfield-white);
+    color: var(--tatooine-yellow);
 }
 
 /* Session app */

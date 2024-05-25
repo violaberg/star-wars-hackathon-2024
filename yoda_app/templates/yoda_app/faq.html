@@ -2,9 +2,6 @@
 {% load static %}
 
 {% block content %}
-
-<!-- faq.html content start here -->
-
 <div class="container h-100">
     <div class="row mx-auto mb-3">
         <h2 class="text-center pb-4">Frequently Asked Questions</h2>
@@ -14,31 +11,23 @@
                     {% for faq in faqs %}
 
                     <!-- FAQ Item -->
-                    <div class="faq-card rounded p-2">
-                        <div class="faq-card-header" id="faqHeading{{ faq.id }}" data-toggle="collapse"
-                            data-target="#faqCollapse{{ faq.id }}" aria-expanded="true"
-                            aria-controls="faqCollapse{{ faq.id }}">
-                            <h3 class="mb-0 d-flex justify-content-between align-items-center">
-                                <button class="faq-link btn" type="button">
-                                    {{ faq.question }}
-                                </button>
-                                <small><i class="fa-solid fa-chevron-down"></i></small>
-                            </h3>
-                        </div>
-                        <div id="faqCollapse{{ faq.id }}" class="collapse" aria-labelledby="faqHeading{{ faq.id }}"
-                            data-parent="#faqAccordion">
-                            <div class="card-body">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqHeading{{ faq.id }}">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse{{ faq.id }}" aria-expanded="true" aria-controls="faqCollapse{{ faq.id }}">
+                                {{ faq.question }}
+                            </button>
+                        </h3>
+                        <div id="faqCollapse{{ faq.id }}" class="accordion-collapse collapse" aria-labelledby="faqHeading{{ faq.id }}" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
                                 {{ faq.answer }}
                             </div>
                         </div>
                     </div>
+
                     {% endfor %}
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<!-- faq.html content ends here -->
-
 {% endblock %}
