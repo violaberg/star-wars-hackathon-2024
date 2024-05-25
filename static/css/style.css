@@ -15,9 +15,9 @@ body {
     height: 100%;
 }
 
- main {
+main {
     flex: 1;
- }
+}
 
 .wrapper {
     display: flex;
@@ -79,11 +79,39 @@ a.nav-link:hover {
     color: var(--tatooine-yellow);
 }
 
-button.navbar-toggler {
-    color: var(--droid-silver);
-    box-shadow: 1px 1px 2px var(--blaze-orange),
-    3px 1px 1px var(--sith-red);
+button.shadow.navbar-toggler {
+    background: var(--galactic-blue);
 }
+
+/* Burger shadow taken from https://css-tricks.com/different-ways-to-get-css-gradient-shadows/ */
+.navbar-toggler {
+    --s: 4px;
+    /* the spread-radius */
+    border: 2px solid var(--starfield-white);
+    position: relative;
+    transform: translate(0);
+    transform-style: preserve-3d;
+}
+
+.shadow:before {
+    content: "";
+    position: absolute;
+    inset: calc(-1*var(--s));
+    clip-path: polygon(-100vmax -100vmax,
+            100vmax -100vmax,
+            100vmax 100vmax,
+            -100vmax 100vmax,
+            -100vmax -100vmax,
+            calc(0px + var(--s)) calc(0px + var(--s)),
+            calc(0px + var(--s)) calc(100% - var(--s)),
+            calc(100% - var(--s)) calc(100% - var(--s)),
+            calc(100% - var(--s)) calc(0px + var(--s)),
+            calc(0px + var(--s)) calc(0px + var(--s)));
+    transform: translate3d(0, 0, -1px);
+    background: conic-gradient(from 90deg at 40% -25%, #00ffff, #00ff00);
+    filter: blur(10px);
+}
+/* end */
 
 /* Footer */
 .footer-area {
