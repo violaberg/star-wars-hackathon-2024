@@ -63,7 +63,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == contact_url %}active{% endif %}"
-                                aria-current="page" href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+                                aria-current="page" href="{% url 'contact' %}"><i class="fas fa-envelope"></i> Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
