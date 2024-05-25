@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Breathing animation</title>
-<style>
-    body {
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #00050f;
-        color: #fff;
-        overflow: hidden;
-        flex-direction: column;
-    }
+{% extends "base.html" %}
+{% load static %}
 
+{% block content %}
+<h2 class="text-center">Breathing animation</h2>
+<style>
     .container {
         display: flex;
         align-items: center;
@@ -29,14 +16,12 @@
     }
 
     .gradient-circle {
-        background: conic-gradient(
-            lightgreen 0%,
-            #3cff32 40%,
-            #fff 40%,
-            #fff 60%,
-            darkgreen 60%,
-            darkgray 100%
-        );
+        background: conic-gradient(lightgreen 0%,
+                #3cff32 40%,
+                #fff 40%,
+                #fff 60%,
+                darkgreen 60%,
+                darkgray 100%);
         height: 320px;
         width: 320px;
         top: -10px;
@@ -46,7 +31,7 @@
         position: absolute;
     }
 
-    .circle{
+    .circle {
         background-color: aquamarine;
         height: 100%;
         width: 100%;
@@ -75,23 +60,24 @@
         display: block;
     }
 
-    .container.grow{
+    .container.grow {
         animation: grow 3s linear forwards;
     }
 
-    .container.shrink{
+    .container.shrink {
         animation: shrink 3s linear forwards;
     }
 
     #innerText {
-        color:#00050f;
+        color: #00050f;
     }
 
     @keyframes rotate {
         from {
             transform: rotate(0deg);
         }
-        to{
+
+        to {
             transform: rotate(360deg);
         }
     }
@@ -100,7 +86,8 @@
         from {
             transform: scale(1);
         }
-        to{
+
+        to {
             transform: scale(1.2);
         }
     }
@@ -109,35 +96,37 @@
         from {
             transform: scale(1.2);
         }
-        to{
+
+        to {
             transform: scale(1);
         }
     }
 </style>
-</head>
 
-<body>
-    <h1>Breathing exercise</h1>
-    <div class="container">
-        <div class="circle"></div>
-        <p id="innerText"></p>
-        <div class="pointer-container">
-            <div class="pointer"></div>
-        </div>
-        <div class="gradient-circle"></div>
+<h1>Breathing exercise</h1>
+<div class="container">
+    <div class="circle"></div>
+    <p id="innerText"></p>
+    <div class="pointer-container">
+        <div class="pointer"></div>
     </div>
+    <div class="gradient-circle"></div>
+</div>
+
+{% endblock %}
+
 <script>
     const container = document.querySelector('.container');
     const text = document.querySelector('#innerText');
 
     const totalTime = 7500;
-    const breathTime = (totalTime / 5)*2;
+    const breathTime = (totalTime / 5) * 2;
     const holdTime = (totalTime / 5);
 
     breatheAnimation()
 
-    function breatheAnimation (){
-        text.innerHTML ='Breath In!'
+    function breatheAnimation() {
+        text.innerHTML = 'Breath In!'
         container.className = 'container grow'
 
         setTimeout(() => {
@@ -152,6 +141,3 @@
 
     setInterval(breatheAnimation, totalTime)
 </script>
-</body>
-
-</html>
