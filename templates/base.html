@@ -6,6 +6,7 @@
 <html class="h-100" lang="en">
 
 <head>
+    <title>INNER FORCE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
@@ -30,7 +31,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>{% block title %}Star Wars{% endblock %}</title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
@@ -38,8 +39,8 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-2 my-3 navbar-custom">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo" class="logo">
+                <a class="glowing-text navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo" class="logo">INNER FORCE
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,6 +57,10 @@
                                 href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link {% if request.path == knowledge_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'knowledge' %}"><i class="fa-solid fa-book"></i> Knowledge Sanctuary</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link {% if request.path == contact_url %}active{% endif %}"
                                 aria-current="page" href="#"><i class="fas fa-envelope"></i> Contact Us</a>
                         </li>
@@ -64,15 +69,12 @@
                                 href="{% url 'faq' %}"><i class="fas fa-question-circle"></i> FAQs</a>
                         </li>
                         {% if user.is_authenticated %}
-                        <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out"
-                                %}</a>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
                         </li>
                         {% else %}
-                        <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In"
-                                %}</a>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up"
-                                %}</a>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
                         </li>
                         {% endif %}
                     </ul>
@@ -85,39 +87,43 @@
             {% endblock content %}
         </main>
     </div>
-    <!-- Footer -->
-    <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
-        <div class="container-fluid">
-            <div class="text-center">
-                <a class="navbar-brand text-xl" href="{% url 'index' %}">
-                    <p class="display-6">INNER FORCE</p>
-                </a>
+        <!-- Footer -->
+        <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
+            <div class="container-fluid">
+                <div class="text-center">
+                    <p class="text-center mb-0">
+                        <a href="{% url 'faq' %}" target="_blank"
+                            class="footer-link text-decoration-none">FAQ</a><br>
+                        <a href="#" target="_blank"
+                            class="footer-link text-decoration-none">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="footer-underline text-cen"></div>
+                <div class="text-center">
+                    <span>
+                        <a class="navbar-brand" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="navbar-brand ms-3" href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
+                            <i class="fa-brands fa-spotify"></i>
+                        </a>
+                    </span>
+                    <p class="mb-0">All Rights Reserved 2024<a href="{% url 'index' %}" class="footer-content font-weight-normal px-2 text-decoration-none">INNER FORCE</a></p>
+                </div>
             </div>
-            <div class="footer-underline text-cen"></div>
-            <div class="text-center">
-                <span>
-                    <a class="navbar-brand" href="https://www.facebook.com/">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </span>
-                <span>
-                    <a class="navbar-brand ms-3" href="https://www.instagram.com/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </span>
-                <span>
-                    <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </span>
-                <span>
-                    <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
-                        <i class="fa-brands fa-spotify"></i>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 <!-- Bootstrap JS and Popper.js -->
 <!-- Bootstrap 5 -->

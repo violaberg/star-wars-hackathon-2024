@@ -27,29 +27,6 @@ body {
     color: white;
 }
 
-.brand {
-    font-family: "Share Tech Mono", monospace;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--lightsaber-green);
-}
-
-.navbar-custom {
-    border-radius: 15px;
-}
-
-.footer-area {
-    padding: 20px 0px;
-    color: var(--starfield-white);
-}
-
-.footer-underline {
-    height: 1px;
-    width: 70px;
-    background-color: var(--droid-silver);
-    margin: 10px auto;
-}
-
 h4 {
     color: var(--tatooine-yellow);
 }
@@ -65,6 +42,72 @@ a.link {
 
 a.link:hover {
     color: var(--holo-cyan);
+}
+
+.brand {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightsaber-green);
+}
+
+.navbar-custom {
+    border-radius: 15px;
+}
+
+a.nav-link {
+    color: var(--holo-cyan);
+}
+
+a.nav-link:hover {
+    color: var(--tatooine-yellow);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--tatooine-yellow);
+}
+
+/* Footer */
+.footer-area {
+    padding: 20px 0px;
+    color: var(--starfield-white);
+}
+
+.footer-underline {
+    height: 1px;
+    width: 70px;
+    background-color: var(--droid-silver);
+    margin: 10px auto;
+}
+
+.footer-content {
+    color: var(--lightsaber-green);
+}
+
+.footer-link {
+    color: var(--holo-cyan);
+}
+
+.footer-link:hover {
+    color: var(--blaze-orange);
+}
+
+.fa-spotify:hover,
+.fa-youtube:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: var(--blaze-orange);
+}
+
+.footer-link:hover {
+    color: var(--blaze-orange);
+}
+
+.fa-spotify:hover,
+.fa-youtube:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: var(--blaze-orange);
 }
 
 .img-hover-zoom {
@@ -219,4 +262,25 @@ p>span {
     background-color: var(--void-grey);
     color: var(--blaze-orange);
     padding: 1rem;
+}
+
+/* Account pages */
+.account-p {
+    color: var(--tatooine-yellow);
+}
+
+.account-danger {
+    color: var(--sith-red);
+}
+
+.account-link {
+    color: var(--sith-red);
+}
+
+.account-link:hover {
+    color: var(--blaze-orange);
+}
+
+label {
+    color: var(--droid-silver);
 }
