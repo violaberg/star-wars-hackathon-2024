@@ -1,10 +1,11 @@
 {% extends 'base.html' %} 
-{% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
 
+{% block content %}
+
 <div class="container my-3">
-  <form id="sessionForm" method="post" style="background-image: url('{% static 'images/yoda_logo' %}')">
+  <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
     {{ session_form | crispy }}
       {% csrf_token %}
       <div class="row justify-content-center">
@@ -12,7 +13,7 @@
               <div class="m-4">
                   <div class="container d-flex align-items-center justify-content-center">
                   </div>
-                  <button type="submit" class="btn" style="width: 100%;">
+                  <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
                   Submit
                   </button>
               </div>

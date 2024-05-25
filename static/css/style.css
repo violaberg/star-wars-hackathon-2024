@@ -274,3 +274,20 @@ label {
 .faq-card-header {
     color: var(--deep-blue);
 }
+
+/* Session app */
+.session-name {
+    color: var(--tatooine-yellow);
+}
+
+.session-character {
+    color: var(--holo-cyan);
+}
+
+.session-user {
+    color: var(--blaze-orange);
+}
+
+.session-level {
+    color: var(--sith-red);
+}
