@@ -4,17 +4,49 @@
 
 {% block content %}
 
+<div class="container mt-4 mr-1">
+  <div class="row mb-4">
+      {% if star_characters %}
+      {% for star in star_characters %}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+          <a href="#" aria-label="{{ star.name }}" class="text-decoration-none">
+              <div class="card h-100 product-card">
+                <div class="img-hover-zoom">
+                  {% if "placeholder" in star.image.url %}
+                  <img src="https://lumiere-a.akamaihd.net/v1/images/5f4e48ae7cc5a900014b2369-image_4957e309.jpeg?region=0%2C48%2C1536%2C768" class="card-img-top"
+                      alt="Star wars Character">
+                  {% else %}
+                  <img src="{{ star.image.url }}" class="card-img-top" alt="The image of {{ star.name }}">
+                  {% endif %}
+                </div>
+                  <div class="card-body">
+                      <h2 class="card-title fs-6 text-truncate" title='{{ star.name }}'><strong>{{ star.name }}</strong>
+                      </h2>
+                      <p class="list-group-item">{{ star.description | safe }}</p>
+                  </div>
+                  
+              </div>
+          </a>
+      </div>
+      {% endfor %}
+      {% else %}
+      <p>The Force is not with you, maybe try next time. Just Kidding project is under development.</p>
+      {% endif %}
+  </div>
+</div>
 <div class="container my-3">
   <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
     {{ session_form | crispy }}
       {% csrf_token %}
       <div class="row justify-content-center">
-          <div class="col-10 col-md-8 col-lg-6 card">
+          <div class="col-10 col-md-8 col-lg-6">
               <div class="m-4">
                   <div class="container d-flex align-items-center justify-content-center">
                   </div>
                   <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
                   Submit
+                  <button type="submit" class="btn neon-button-blue" style="width: 100%;">
+                  Save
                   </button>
               </div>
           </div>

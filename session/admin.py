@@ -1,9 +1,11 @@
 from django.contrib import admin
-from .models import Session
-# Register your models here.
+from .models import Session, Character
+from django_summernote.admin import SummernoteModelAdmin
 
-@admin.register(Session)
-class SessionAdmin(admin.ModelAdmin):
-
-    list_display = ('session_name', 'created_on')
+admin.site.register(Session)
+# admin.site.register(Character)
+@admin.register(Character)
+class SessionAdmin(SummernoteModelAdmin):
+    list_display = ( 'created_on',)
+    summernote_fields = ('description','meditation_technique_one','meditation_technique_two',)
     # prepopulated_fields = {'slug': ('session_name',)}
