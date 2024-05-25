@@ -24,7 +24,7 @@ body {
 body {
     background-color: var(--deep-blue);
     font-family: "Share Tech Mono", monospace;
-    color: white;
+    color: var(--starfield-white);
 }
 
 h4 {
@@ -198,7 +198,7 @@ a.nav-link:hover {
         0 0 20px var(--lightsaber-green),
         inset 0 0 10px var(--lightsaber-green),
         inset 0 0 15px var(--lightsaber-green);
-    color: var(--tatooine-yellow);
+    color: var(--droid-silver);
 }
 
 /* Home page */
@@ -270,7 +270,7 @@ p>span {
 }
 
 .account-danger {
-    color: var(--sith-red);
+    color: var(--blaze-orange);
 }
 
 .account-link {
@@ -283,4 +283,34 @@ p>span {
 
 label {
     color: var(--droid-silver);
+}
+
+/* FAQ page */
+.faq-card {
+    background-color: var(--droid-silver);
+}
+
+.faq-section {
+    border: 3px solid var(--blaze-orange);
+}
+
+.faq-card-header {
+    color: var(--deep-blue);
+}
+
+/* Session app */
+.session-name {
+    color: var(--tatooine-yellow);
+}
+
+.session-character {
+    color: var(--holo-cyan);
+}
+
+.session-user {
+    color: var(--blaze-orange);
+}
+
+.session-level {
+    color: var(--sith-red);
 }

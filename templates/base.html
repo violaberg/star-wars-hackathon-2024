@@ -57,12 +57,13 @@
                                 href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == knowledge_url %}active{% endif %}" aria-current="page"
-                                href="{% url 'knowledge' %}"><i class="fa-solid fa-book"></i> Knowledge Sanctuary</a>
+                            <a class="nav-link {% if request.path == knowledge_url %}active{% endif %}"
+                                aria-current="page" href="{% url 'knowledge' %}"><i class="fa-solid fa-book"></i>
+                                Knowledge Sanctuary</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == contact_url %}active{% endif %}"
-                                aria-current="page" href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+                                aria-current="page" href="{% url 'contact' %}"><i class="fas fa-envelope"></i> Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == faq_url %}active{% endif %}" aria-current="page"
@@ -87,51 +88,51 @@
             {% endblock content %}
         </main>
     </div>
-        <!-- Footer -->
-        <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
-            <div class="container-fluid">
-                <div class="text-center">
-                    <p class="text-center mb-0">
-                        <a href="{% url 'faq' %}" target="_blank"
-                            class="footer-link text-decoration-none">FAQ</a><br>
-                        <a href="#" target="_blank"
-                            class="footer-link text-decoration-none">Privacy Policy</a>
-                    </p>
-                </div>
-                <div class="footer-underline text-cen"></div>
-                <div class="text-center">
-                    <span>
-                        <a class="navbar-brand" href="https://www.facebook.com/">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a class="navbar-brand ms-3" href="https://www.instagram.com/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
-                            <i class="fa-brands fa-spotify"></i>
-                        </a>
-                    </span>
-                    <p class="mb-0">All Rights Reserved 2024<a href="{% url 'index' %}" class="footer-content font-weight-normal px-2 text-decoration-none">INNER FORCE</a></p>
-                </div>
+    <!-- Footer -->
+    <footer class="footer-area navbar-dark bg-dark mx-2 my-3 navbar-custom fixed-bottom">
+        <div class="container-fluid">
+            <div class="text-center">
+                <p class="text-center mb-0">
+                    <a href="{% url 'faq' %}" target="_blank" class="footer-link text-decoration-none">FAQ</a><br>
+                    <a href="#" target="_blank" class="footer-link text-decoration-none">Privacy Policy</a>
+                </p>
             </div>
-        </footer>
+            <div class="footer-underline text-cen"></div>
+            <div class="text-center">
+                <span>
+                    <a class="navbar-brand" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://www.youtube.com/@StarWars">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </span>
+                <span>
+                    <a class="navbar-brand ms-3" href="https://open.spotify.com/artist/3cVhAgZoWxAabcnNdpQXHZ">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                </span>
+                <p class="mb-0">All Rights Reserved 2024<a href="{% url 'index' %}"
+                        class="footer-content font-weight-normal px-2 text-decoration-none">INNER FORCE</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and Popper.js -->
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
-<!-- Bootstrap JS and Popper.js -->
-<!-- Bootstrap 5 -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
 
 </html>
