@@ -75,6 +75,12 @@ a.nav-link:hover {
     color: var(--tatooine-yellow);
 }
 
+button.navbar-toggler {
+    color: var(--droid-silver);
+    box-shadow: 1px 1px 2px var(--blaze-orange),
+    3px 1px 1px var(--sith-red);
+}
+
 /* Footer */
 .footer-area {
     padding: 20px 0px;
@@ -262,6 +268,7 @@ h1,
 
 .about-content {
     color: var(--starfield-white);
+    text-align: justify;
 }
 
 p>span {
@@ -345,4 +352,5 @@ label {
 
 ul {
     padding-left: 1rem;
+    list-style-type: circle;
 }
