@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- contact.html content starts here -->
+
+<h1 class="text-center pb-3">Contact form</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mt-4 offset-md-2">
+      <form method="POST" action="https://formdump.codeinstitute.net/"> <!--action dump form from Code Institute-->
+        <div>
+          <label for="id_name">Name</label>
+          <input type="text" class="form-control" name="name" placeholder="enter your full name here" id="id_name"
+            minlength="1" maxlength="150" required>
+        </div>
+        <div>
+          <label for="id_email" class="pt-4">E-mail</label>
+          <input type="email" class="form-control" name="email" id="id_email"
+            placeholder="enter your email address here" minlength="1" maxlength="320">
+        </div>
+        <div>
+          <label for="subjectInput" class="pt-4">Subject</label>
+          <input type="text" class="form-control" name="subject" id="subjectInput" placeholder="Subject" required>
+        </div>
+        <div>
+          <label for="textInput" class="pt-4">Message</label>
+          <textarea class="form-control" id="textInput" rows="3"
+            placeholder="Please say a few words about your enquiry." required></textarea>
+        </div>
+        <div class="text-center">
+          <button class="neon-button-blue btn hvr-grow my-5" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- contact.html content ends here -->
+
+{% endblock %}

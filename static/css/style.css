@@ -1,5 +1,5 @@
 :root {
-    --deep-blue: #00050f;
+    --galactic-blue: #00050f;
     --tatooine-yellow: #ffcc00;
     --blaze-orange: #ff8c00;
     --sith-red: #ff0000;
@@ -22,8 +22,30 @@ body {
 }
 
 body {
-    background-color: var(--deep-blue);
+    background-color: var(--galactic-blue);
     font-family: "Share Tech Mono", monospace;
+    color: var(--starfield-white);
+}
+
+h4 {
+    color: var(--tatooine-yellow);
+}
+
+h2 {
+    color: var(--lightsaber-green);
+}
+
+h3 {
+    color: var(--tatooine-yellow);
+}
+
+a.link {
+    color: var(--galactic-blue);
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: var(--holo-cyan);
 }
 
 .brand {
@@ -33,11 +55,33 @@ body {
     color: var(--lightsaber-green);
 }
 
-.navbar-custom {
-    border-radius: 15px;
-    /* padding: 20px 0px; */
+.brand-name {
+    font-family: "Climate Crisis", sans-serif;
 }
 
+.navbar-custom {
+    border-radius: 15px;
+}
+
+a.nav-link {
+    color: var(--holo-cyan);
+}
+
+a.nav-link:hover {
+    color: var(--tatooine-yellow);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--tatooine-yellow);
+}
+
+button.navbar-toggler {
+    color: var(--droid-silver);
+    box-shadow: 1px 1px 2px var(--blaze-orange),
+    3px 1px 1px var(--sith-red);
+}
+
+/* Footer */
 .footer-area {
     padding: 20px 0px;
     color: var(--starfield-white);
@@ -50,58 +94,166 @@ body {
     margin: 10px auto;
 }
 
-h4 {
-    color: var(--tatooine-yellow);
-}
-
-h2 {
+.footer-content {
     color: var(--lightsaber-green);
 }
 
-a.link {
-    color: var(--deep-blue);
-    text-decoration: none;
-}
-
-a.link:hover {
+.footer-link,
+.policy-link {
     color: var(--holo-cyan);
 }
 
+.footer-link:hover,
+.policy-link:hover {
+    color: var(--blaze-orange);
+}
+
+.fa-spotify:hover,
+.fa-youtube:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: var(--blaze-orange);
+}
+
+.footer-link:hover {
+    color: var(--blaze-orange);
+}
+
+.fa-spotify:hover,
+.fa-youtube:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: var(--blaze-orange);
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+/* Buttons */
+.neon-button-blue {
+    background-color: transparent;
+    border: 3px solid var(--holo-cyan);
+    border-radius: 5px;
+    color: var(--holo-cyan);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--holo-cyan),
+        0 0 10px var(--holo-cyan),
+        inset 0 0 5px var(--holo-cyan),
+        inset 0 0 10px var(--holo-cyan);
+}
+
+.neon-button-blue:hover {
+    box-shadow: 0 0 15px var(--holo-cyan),
+        0 0 20px var(--holo-cyan),
+        inset 0 0 10px var(--holo-cyan),
+        inset 0 0 15px var(--holo-cyan);
+    color: var(--lightsaber-green);
+}
+
+.neon-button-red {
+    background-color: transparent;
+    border: 3px solid var(--sith-red);
+    border-radius: 5px;
+    color: var(--sith-red);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--sith-red),
+        0 0 10px var(--sith-red),
+        inset 0 0 5px var(--sith-red),
+        inset 0 0 10px var(--sith-red);
+}
+
+.neon-button-red:hover {
+    box-shadow: 0 0 15px var(--sith-red),
+        0 0 20px var(--sith-red),
+        inset 0 0 10px var(--sith-red),
+        inset 0 0 15px var(--sith-red);
+    color: var(--blaze-orange);
+}
+
+.neon-button-green {
+    background-color: transparent;
+    border: 3px solid var(--lightsaber-green);
+    border-radius: 5px;
+    color: var(--lightsaber-green);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--lightsaber-green),
+        0 0 10px var(--lightsaber-green),
+        inset 0 0 5px var(--lightsaber-green),
+        inset 0 0 10px var(--lightsaber-green);
+}
+
+.neon-button-green:hover {
+    box-shadow: 0 0 15px var(--lightsaber-green),
+        0 0 20px var(--lightsaber-green),
+        inset 0 0 10px var(--lightsaber-green),
+        inset 0 0 15px var(--lightsaber-green);
+    color: var(--droid-silver);
+}
+
 /* Home page */
-span.slogan {
+.slogan {
     color: var(--tatooine-yellow);
     font-style: italic;
 }
 
 .hero-img {
-    border: 5px solid var(--starfield-white);
+    border: 7px solid var(--starfield-white);
     border-radius: 50%;
     box-shadow:
-        0 0 10px var(--sith),
-        /* Outer shadow (red) */
-        0 0 10px var(--lightsaber),
-        /* Outer shadow (green) */
-        0 0 10px var(--tatooine),
-        /* Outer shadow (yellow) */
-        inset 0 0 10px var(--sith),
-        /* Inner shadow (red) */
-        inset 0 0 10px var(--lightsaber),
-        /* Inner shadow (green) */
-        inset 0 0 10px var(--tatooine);
-    /* Inner shadow (yellow) */
+        10px 0 20px var(--sith-red),
+        -10px 0 20px var(--lightsaber-green),
+        0 10px 20px var(--tatooine-yellow),
+        0 -10px 20px var(--tatooine-yellow),
+        10px 0 25px var(--sith-red),
+        -10px 0 25px var(--lightsaber-green),
+        0 10px 25px var(--tatooine-yellow),
+        0 -10px 25px var(--tatooine-yellow),
+        inset 10px 0 20px var(--lightsaber-green),
+        inset -10px 0 10px var(--sith-red),
+        inset 0 10px 10px var(--tatooine-yellow),
+        inset 0 -10px 10px var(--tatooine-yellow);
+    margin: 2rem 0;
+    padding: 1rem;
 }
 
+h1,
 .glowing-text {
-    color: var(--lightsaber-green);
+    color: var(--starfield-white);
     text-shadow:
         0 0 5px #00ff00,
         0 0 10px #00ff00,
         0 0 20px #00ff00;
-}
-
-.session-button {
-    background-color: var(--starfield-white);
-
 }
 
 /* About page */
@@ -116,6 +268,7 @@ span.slogan {
 
 .about-content {
     color: var(--starfield-white);
+    text-align: justify;
 }
 
 p>span {
@@ -131,4 +284,73 @@ p>span {
     background-color: var(--void-grey);
     color: var(--blaze-orange);
     padding: 1rem;
+}
+
+/* Account pages */
+.account-p {
+    color: var(--tatooine-yellow);
+}
+
+.account-danger {
+    color: var(--blaze-orange);
+}
+
+.account-link {
+    color: var(--sith-red);
+}
+
+.account-link:hover {
+    color: var(--blaze-orange);
+}
+
+label {
+    color: var(--droid-silver);
+}
+
+/* FAQ page */
+.accordion-item {
+    background-color: var(--holo-cyan);
+}
+
+.accordion-button.collapsed,
+.accordion-button:not(.collapsed) {
+    background: var(--void-grey);
+    color: var(--tatooine-yellow);
+}
+
+.accordion-body {
+    background-color: var(--droid-silver);
+    color: var(--galactic-blue);
+    text-align: justify;
+}
+
+/* Session app */
+.session-name {
+    color: var(--tatooine-yellow);
+}
+
+.session-character {
+    color: var(--holo-cyan);
+}
+
+.session-user {
+    color: var(--blaze-orange);
+}
+
+.session-level {
+    color: var(--sith-red);
+}
+
+/* Privacy Policy page */
+.policy-p {
+    color: var(--blaze-orange);
+}
+
+.policy-text {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 1rem;
+    list-style-type: circle;
 }

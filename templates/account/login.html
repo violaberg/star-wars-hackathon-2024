@@ -6,14 +6,16 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-8 mt-5 offset-md-2">
-            <h2 class="fs-1 text-white">{% trans "Sign in to Star Wars" %}</h2>
-            <p class="fs-5 text-white">{% blocktrans %}Welcome back to Star Wars. Please log in to continue from where you left
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center">{% trans "Sign in to Star Wars" %}</h1>
+            <p class="account-p text-center fs-5">{% blocktrans %}Welcome back to Star Wars. Please log in to continue
+                from where you left
                 off. If
                 you
-                do not have an account yet, then <a class="link text-decoration-none" href="{{ signup_url }}">sign
+                do not have an account yet, then <a class="account-link text-decoration-none"
+                    href="{{ signup_url }}">sign
                     up</a>
                 first.{% endblocktrans %}</p>
         </div>
@@ -24,24 +26,25 @@
                     {% csrf_token %}
                     <div>
                         {{ form.login.errors }}
-                        <label for="id_login" class="text-white">Username</label>
-                        <input type="text" class="form-control" name="login"
-                            placeholder="enter your full name here" id="id_login" minlength="1"
-                            maxlength="150">
+                        <label for="id_login">Username</label>
+                        <input type="text" class="form-control" name="login" placeholder="enter your full name here"
+                            id="id_login" minlength="1" maxlength="150">
                     </div>
                     <br>
                     <div>
                         {{ form.password.errors }}
-                        <label for="id_password" class="text-white">Password</label>
+                        <label for="id_password">Password</label>
                         <input type="password" class="form-control" name="password" id="id_password"
                             placeholder="enter your password here" minlength="1" maxlength="50">
                     </div>
                     <p class="mt-3">
-                        <label for="id_remember" class="text-white">Remember Me</label>
+                        <label for="id_remember">Remember Me</label>
                         <input type="checkbox" name="remember" id="id_remember">
                     </p>
-                    <button class="btn btn-secondary hvr-grow right mt-2 mb-5 btn-login" type="submit">
-                        {% trans "SignIn" %}</button>
+                    <div class="text-center">
+                        <button class="neon-button-blue btn hvr-grow mt-2 mb-5 btn-login" type="submit">
+                            {% trans "Sign In" %}</button>
+                    </div>
                 </form>
             </div>
         </div>

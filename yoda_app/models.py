@@ -14,3 +14,18 @@ class FAQ(models.Model):
 
     def __str__(self):
         return self.question
+
+
+class Article(models.Model):
+    """
+    Model for knowledge sanctuary page
+    """
+    class Meta:
+        verbose_name_plural = 'Articles'
+
+    title = models.CharField(max_length=200)
+    body = models.TextField()
+    link = models.URLField(max_length=200)
+
+    def __str__(self):
+        return self.title
