@@ -15,6 +15,10 @@ body {
     height: 100%;
 }
 
+ main {
+    flex: 1;
+ }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -83,7 +87,7 @@ button.navbar-toggler {
 
 /* Footer */
 .footer-area {
-    padding: 20px 0px;
+    padding: 10px 0px;
     color: var(--starfield-white);
 }
 
