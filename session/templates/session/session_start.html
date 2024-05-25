@@ -1,7 +1,10 @@
 {% extends 'base.html' %} 
-{% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
+
+{% block content %}
+
+<!-- session_start.html content starts here -->
 
 <div class="container mt-4 mr-1">
   <div class="row mb-4">
@@ -34,7 +37,7 @@
   </div>
 </div>
 <div class="container my-3">
-  <form id="sessionForm" method="post">
+  <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
     {{ session_form | crispy }}
       {% csrf_token %}
       <div class="row justify-content-center">
@@ -42,6 +45,8 @@
               <div class="m-4">
                   <div class="container d-flex align-items-center justify-content-center">
                   </div>
+                  <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
+                  Submit
                   <button type="submit" class="btn neon-button-blue" style="width: 100%;">
                   Save
                   </button>
@@ -50,5 +55,7 @@
       </div>
   </form>
 </div>
+
+<!-- session_start.html content ends here -->
 
 {% endblock content %}

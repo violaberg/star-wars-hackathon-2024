@@ -15,6 +15,11 @@ def about(request):
     return render(request, "yoda_app/about.html")
 
 
+def contact(request):
+    """ A view to return the contact page"""
+    return render(request, "yoda_app/contact.html")
+
+
 def faq(request):
     """ A view to return the FAQ page"""
     faqs = FAQ.objects.all()
