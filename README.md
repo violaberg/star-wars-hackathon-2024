@@ -23,7 +23,7 @@ Our unique meditation app harnesses the cutting-edge Hemi-Sync technology to syn
 
 ![AmIResponsive](static/images/AmIResponsive-PLACEHOLDER.png)
 
-
+<br>
 
 ## Criteria
 Our team addressed the following Hackathon criteria with innovative solutions:
@@ -46,7 +46,6 @@ We aim to:
 - Continuously improve app performance, ensuring smooth, bug-free operation to provide a reliable and seamless user experience.
 
 <hr>
-<br>
 
 ## **DESIGN**
 
@@ -134,8 +133,8 @@ As a new user:
 - I can have a seamless guided meditation experience so that I can fully immerse myself in the session without distractions
 -  I can access Star Wars music tailored for different meditation events so that I can enhance my meditation experience with thematic music
 <br><br>
-As a returning user:
- - I can log in to my account so that I can continue my meditation practice from where I left off
+- As a returning user:
+ I can log in to my account so that I can continue my meditation practice from where I left off
 
 
 
@@ -170,14 +169,47 @@ As a returning user:
 ## **TESTING**
 
 
-## **Technologies Used**
+## TECHNOLOGIES USED
 
-* Django
-* Python
-* JavaScript
-* Bootstrap
-* HTML
-* CSS
+### Languages Used
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org)
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com)
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML)
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS)
+
+ ## Frameworks, Libraries & Programs Used
+
+- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com)- GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku. 
+
+- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. Used for version control. 
+
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) - Connected to the GitHub repository, Heroku is a cloud application platform used to deploy this project so the backend language can be utilised/tested. Used for hosting the deployed back-end site.
+
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) - Django is a high-level web framework for building web applications rapidly with a clean and pragmatic design. Used as the Python framework for the site.
+
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently. Utilised for modern responsiveness and pre-built components.
+
+- [![Cloudinary](https://img.shields.io/badge/Cloudinary-purple?logo=cloudinary&logoColor=white)](https://cloudinary.com)- Cloudinary is a cloud-based media management platform that offers solutions for storing, optimising, and delivering images and videos for web and mobile applications. 
+
+- [![Summernote](https://img.shields.io/badge/Summernote-orange?logo=summernote&logoColor=white)](https://summernote.org/) - Summernote is a Django app that enables users to easily integrate a rich text editor into their web applications, enhancing event creation and description functionality. 
+
+- [![TinyPNG](https://img.shields.io/badge/TinyPNG-grey?logo=tinypng&logoColor=CE0908)](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimise image files for faster loading on webpages while maintaining visual quality. Used to Compress the images.
+
+- [![Google Fonts](https://img.shields.io/badge/Google_Fonts-blue?logo=google-fonts&logoColor=white)](https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography. Imported for fonts.
+
+- [![Beautify](https://img.shields.io/badge/Beautify-green?logo=beautify&logoColor=white)](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency. Used in Gitpod to help color code and spot errors.
+
+- [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://figma.com/) - Figma is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas. used for my wireframes.
+
+- [![Am I Responsive](https://img.shields.io/badge/Am_I_Responsive-blue?logoColor=white)](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sises, helping to ensure responsiveness and compatibility across platforms. Put my heroku url to check responsivity to all devices.
+
+- [![Diffchecker](https://img.shields.io/badge/Diffchecker-grey?logo=diffchecker&logoColor=white)](https://www.diffchecker.com/text-compare/) - Diffchecker is a text comparison tool used to highlight the differences between two blocks of text, facilitating comparison and analysis. Update my code against old code for validation.
+
+- [![W3C CSS Validator](https://img.shields.io/badge/W3C_CSS_Validator-grey?logo=css3&logoColor=white)](https://jigsaw.w3.org/css-validator/) - The W3C CSS Validator is a tool used to check the validity and syntax of CSS code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my CSS for validation.
+
+- [![W3C Markup Validator](https://img.shields.io/badge/W3C_Markup_Validator-grey?logo=html5&logoColor=white)](https://validator.w3.org/#validate_by_input) - The W3C Markup Validator is a tool used to check the validity and syntax of HTML code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my html for validation.
+
+<br>
 
 <hr>
 
