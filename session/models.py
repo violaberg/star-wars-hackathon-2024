@@ -3,13 +3,6 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 class Session(models.Model):
-    # CHARACTERS = [
-    #     (0, 'Yoda1'),
-    #     (1, 'Yoda2'),
-    #     (3, 'Yoda3'),
-    #     (4, 'Yoda4'),
-    #     (5, 'Yoda5'),
-    # ]
     DIFFICULTY = [
         (0, 'Easy'),
         (1, 'Medium'),

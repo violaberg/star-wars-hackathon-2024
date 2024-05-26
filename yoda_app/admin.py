@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django_summernote.admin import SummernoteModelAdmin
 from .models import FAQ, Article
 
 
@@ -9,6 +8,5 @@ class FAQAdmin(admin.ModelAdmin):
 
 
 @admin.register(Article)
-class ArticleAdmin(SummernoteModelAdmin):
+class ArticleAdmin(admin.ModelAdmin):
     list_display = ('title', 'link')
-    summernote_fields = ('body',)
