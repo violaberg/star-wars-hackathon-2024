@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class FAQ(models.Model):
@@ -23,6 +24,7 @@ class Article(models.Model):
     class Meta:
         verbose_name_plural = 'Articles'
 
+    image = CloudinaryField('image', default='placeholder')
     title = models.CharField(max_length=200)
     body = models.TextField()
     link = models.URLField(max_length=200)
