@@ -41,5 +41,7 @@ def knowledge(request):
 
 
 def article_detail(request, slug):
+    """ A view to return the article detail page"""
     article = get_object_or_404(Article, slug=slug)
-    return render(request, 'article_detail.html', {'article': article})
+    return render(request, 'yoda_app/article_detail.html', {'article': article})
+
