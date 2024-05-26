@@ -332,6 +332,7 @@ p>span {
 }
 
 .card-body {
+    color: var(--galactic-blue);
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -346,7 +347,8 @@ p>span {
 }
 
 .card-text {
-    flex: 1; /* Make the text take up remaining space */
+    color: var(--galactic-blue);
+    flex: 1;
 }
 
 /* Account pages */
@@ -408,17 +410,36 @@ label {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .back {
+.back {
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
-    text-align: center;
     background-size: cover;
-    background-position: center;
     border-radius: 20px;
+    color: var(--starfield-white);
     height: 70%;
+    text-align: center;
+}
+
+.modal-card {
+    background-color: var(--galactic-blue);
+}
+
+.modal-content {
+    border: 2px solid var(--droid-silver);
+}
+
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+    background: var(--void-grey);
+}
+
+.btn-close {
+    background-color: var(--holo-cyan);
 }
 
 /* Privacy Policy page */
@@ -437,9 +458,3 @@ ul {
 
 /* --------------- */
 /* Media quries */
-@media (min-width: 1200px) {
-    .card-deck {
-        gap: 0;
-        width: 66%;
-    }
-}
