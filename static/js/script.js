@@ -1,11 +1,3 @@
-// Toggles frequently asked question answers
-// document.addEventListener("DOMContentLoaded", function () {
-//     var faqLink = document.querySelector(".faq-link");
-
-//     faqLink.addEventListener("click", function (event) {
-//         event.preventDefault();
-//     });
-// });
 document.addEventListener('DOMContentLoaded', function () {
     let audio = document.getElementById('background-audio');
     let playButton = document.getElementById('play-button');
