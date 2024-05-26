@@ -494,6 +494,29 @@ label {
     color: var(--sith-red);
 }
 
+.background-op {
+    background-color: var(--void-grey);
+    border: 3px solid var(--blaze-orange);
+    color: var(--starfield-white);
+}
+
+.meditation-span,
+.meditation-instructions {
+    color: var(--droid-silver);
+}
+
+.start-meditation {
+    color: var(--blaze-orange);
+}
+
+.meditation-instructions2 {
+    color: var(--lightsaber-green);
+}
+
+.modal-card {
+    background-color: var(--void-grey);
+}
+
 /* Privacy Policy page */
 .policy-p {
     color: var(--blaze-orange);
