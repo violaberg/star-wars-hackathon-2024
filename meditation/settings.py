@@ -30,10 +30,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "starwars")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 
-                 '.herokuapp.com','8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-lg28lwrwafn.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-gnztf8bcrxu.ws-eu114.gitpod.io']
+                 '.herokuapp.com','8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-lg28lwrwafn.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-gnztf8bcrxu.ws-eu114.gitpod.io',  '8000-violaberg-starwarshacka-tp7wbsyastc.ws-eu114.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-violaberg-starwarshacka-lg28lwrwafn.ws-eu114.gitpod.io', 'https://8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io'
+    'https://8000-violaberg-starwarshacka-lg28lwrwafn.ws-eu114.gitpod.io', 'https://8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io', 'https://8000-violaberg-starwarshacka-gnztf8bcrxu.ws-eu114.gitpod.io', 'https://8000-violaberg-starwarshacka-tp7wbsyastc.ws-eu114.gitpod.io' 
 ]
 
 # Application definition
@@ -108,6 +108,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
