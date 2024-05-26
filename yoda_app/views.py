@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.contrib import messages
 
@@ -38,3 +38,8 @@ def knowledge(request):
     knowledge_url = reverse('knowledge')
 
     return render(request, "yoda_app/knowledge.html", {'articles': articles, 'knowledge_url': knowledge_url})
+
+
+def article_detail(request, slug):
+    article = get_object_or_404(Article, slug=slug)
+    return render(request, 'article_detail.html', {'article': article})
