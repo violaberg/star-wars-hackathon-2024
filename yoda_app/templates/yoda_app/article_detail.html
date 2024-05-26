@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">{{ article.title }}</h1>
+      {% if article.image %}
+      <img src="{{ article.image.url }}" class="img-fluid mx-auto d-block" alt="{{ article.title }}">
+      {% else %}
+      <img src="{% static 'images/placeholder.png' %}" class="img-fluid mx-auto d-block" alt="Placeholder Image">
+      {% endif %}
+      <div class="mt-3">
+        {{ article.body|linebreaks|safe }}
+      </div>
+      <a href="{{ article.link }}" target="_blank" class="btn btn-primary mt-3">
+        <i class="icon px-2 fa-solid fa-link text-decoration-none"></i>Source:
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="text-center"><a href="{% url 'index' %}" class="neon-button-blue btn mb-4">Home</a></div>
+{% endblock %}
