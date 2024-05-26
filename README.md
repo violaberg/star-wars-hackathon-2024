@@ -231,7 +231,7 @@ Amanda Mascurine
 [LinkedIn](https://www.linkedin.com/in/amanda-mascurine/) | [GitHub](https://github.com/AmandaCIdev)
 
 Kati Molnar
-[LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com/molnarlin)
+[LinkedIn]([https://www.linkedin.com/in/katalin-molnar-b6a694165/]) | [GitHub](https://github.com/molnarlin)
 
 Katarina Nadia
 [LinkedIn](https://linkedin.com/k-nadia) | [GitHub](https://github.com/k-nadia)
@@ -245,6 +245,8 @@ Special thanks to:
 
 - **CodeInstitute** for organizing the Hackathon.
 
+- https://www.youtube.com/watch?v=ZY_PmJX6dAo reference for starry sky background on the contact page from Divinector.
 
+- https://www.youtube.com/watch?v=l-1ZrU6avzI for breathing circle from Traversy Media.
 
 [def]: images/AmIResponsive-PLACEHOLDER.png
