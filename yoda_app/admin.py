@@ -9,4 +9,4 @@ class FAQAdmin(admin.ModelAdmin):
 
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'link')
+    list_display = ('title', 'body', 'link')

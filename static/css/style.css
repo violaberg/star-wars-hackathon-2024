@@ -420,10 +420,6 @@ label {
 }
 
 /* FAQ page */
-.accordion-item {
-    background-color: var(--holo-cyan);
-}
-
 .accordion-button.collapsed,
 .accordion-button:not(.collapsed) {
     background: var(--void-grey);
