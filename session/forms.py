@@ -5,4 +5,4 @@ class SessionForm(forms.ModelForm):
 
     class Meta:
         model = Session
-        fields = ('character','level')
+        fields = ('level',)
