@@ -7,28 +7,25 @@
 <!-- session_start.html content starts here -->
 
 <div class="container mt-4 mr-1">
-  <div class="row mb-4">
+  <div class="row text-center mb-4">
       {% if star_characters %}
       {% for star in star_characters %}
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
-          <a href="#" aria-label="{{ star.name }}" class="text-decoration-none">
               <div class="card h-100 product-card">
                 <div class="img-hover-zoom">
                   {% if "placeholder" in star.image.url %}
                   <img src="https://lumiere-a.akamaihd.net/v1/images/5f4e48ae7cc5a900014b2369-image_4957e309.jpeg?region=0%2C48%2C1536%2C768" class="card-img-top"
-                      alt="Star wars Character">
+                      alt="Star wars Character" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#characterId-{{ forloop.counter }}">
                   {% else %}
-                  <img src="{{ star.image.url }}" class="card-img-top" alt="The image of {{ star.name }}">
+                  <img src="{{ star.image.url }}" class="card-img-top" alt="The image of {{ star.name }}" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#characterId-{{ forloop.counter }}">
                   {% endif %}
                 </div>
                   <div class="card-body">
-                      <h2 class="card-title fs-6 text-truncate" title='{{ star.name }}'><strong>{{ star.name }}</strong>
+                      <h2 class="card-title fs-6 text-truncate rounded" title='{{ star.name }}'><strong>{{ star.name }}</strong>
                       </h2>
                       <p class="list-group-item">{{ star.description | safe }}</p>
                   </div>
-                  
               </div>
-          </a>
       </div>
       {% endfor %}
       {% else %}
@@ -36,26 +33,80 @@
       {% endif %}
   </div>
 </div>
-<div class="container my-3">
-  <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
-    {{ session_form | crispy }}
-      {% csrf_token %}
-      <div class="row justify-content-center">
-          <div class="col-10 col-md-8 col-lg-6">
-              <div class="m-4">
-                  <div class="container d-flex align-items-center justify-content-center">
-                  </div>
-                  <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
-                  Submit
-                  <button type="submit" class="btn neon-button-blue" style="width: 100%;">
-                  Save
-                  </button>
-              </div>
-          </div>
-      </div>
-  </form>
-</div>
 
-<!-- session_start.html content ends here -->
+<!-- Modal Structure -->
+{% if star_characters %}
+{% for star in star_characters %}
+<div class="modal fade" id="characterId-{{ forloop.counter }}" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg bg-dark rounded">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="imageModalLabel" name="{{ star.name }}">{{ star.name }}'s meditation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="modal-card col-md-6 card mt-3">
+            <img src="{{ star.med_one.url }}" alt="Front Image" class="img-fluid equal-image">
+            <div>
+              <h2 class="card-title text-center fs-6 text-truncate" name="meditation_one_name"><strong>{{ star.meditation_one_name | safe }}</strong>
+              </h2>
+          </div>
+          <div class="container my-3">
+            <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
+              {{ session_form | crispy }}
+              <input type="hidden" name="meditation_one_name" value="{{ star.meditation_one_name }}">
+              <input type="hidden" name="name" value="{{ star.name }}">
+                {% csrf_token %}
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-8 col-lg-6">
+                        <div class="m-4">
+                            <div class="container d-flex align-items-center justify-content-center">
+                            </div>
+                            <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
+                            Start
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+          </div>
+          </div>
+          <div class="modal-card col-md-6 card mt-3">
+            <img src="{{ star.med_two.url }}" alt="Back Image" class="img-fluid equal-image">
+            <div>
+              <h2 class="card-title text-center fs-6 text-truncate" name="meditation_two_name"><strong>{{ star.meditation_two_name | safe }}</strong>
+              </h2>
+          </div>
+          <div class="container my-3">
+          <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
+            {{ session_form | crispy }}
+            <input type="hidden" name="meditation_two_name" value="{{ star.meditation_two_name }}">
+            <input type="hidden" name="name" value="{{ star.name }}">
+              {% csrf_token %}
+              <div class="row justify-content-center">
+                  <div class="col-10 col-md-8 col-lg-6">
+                      <div class="m-4">
+                          <div class="container d-flex align-items-center justify-content-center">
+                          </div>
+                          <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
+                          Start
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </form>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn neon-button-red" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
 
 {% endblock content %}

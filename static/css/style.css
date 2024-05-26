@@ -15,9 +15,9 @@ body {
     height: 100%;
 }
 
- main {
+main {
     flex: 1;
- }
+}
 
 .wrapper {
     display: flex;
@@ -27,8 +27,8 @@ body {
 
 body {
     background-color: var(--galactic-blue);
-    font-family: "Share Tech Mono", monospace;
     color: var(--starfield-white);
+    font-family: "Share Tech Mono", monospace;
 }
 
 h4 {
@@ -53,10 +53,10 @@ a.link:hover {
 }
 
 .brand {
+    color: var(--lightsaber-green);
     font-family: "Share Tech Mono", monospace;
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--lightsaber-green);
 }
 
 .brand-name {
@@ -79,23 +79,52 @@ a.nav-link:hover {
     color: var(--tatooine-yellow);
 }
 
-button.navbar-toggler {
-    color: var(--droid-silver);
-    box-shadow: 1px 1px 2px var(--blaze-orange),
-    3px 1px 1px var(--sith-red);
+button.shadow.navbar-toggler {
+    background: var(--galactic-blue);
 }
+
+/* Burger shadow taken from https://css-tricks.com/different-ways-to-get-css-gradient-shadows/ */
+.navbar-toggler {
+    --s: 4px;
+    /* the spread-radius */
+    border: 2px solid var(--starfield-white);
+    position: relative;
+    transform: translate(0);
+    transform-style: preserve-3d;
+}
+
+.shadow:before {
+    background: conic-gradient(from 90deg at 40% -25%, #00ffff, #00ff00);
+    clip-path: polygon(-100vmax -100vmax,
+            100vmax -100vmax,
+            100vmax 100vmax,
+            -100vmax 100vmax,
+            -100vmax -100vmax,
+            calc(0px + var(--s)) calc(0px + var(--s)),
+            calc(0px + var(--s)) calc(100% - var(--s)),
+            calc(100% - var(--s)) calc(100% - var(--s)),
+            calc(100% - var(--s)) calc(0px + var(--s)),
+            calc(0px + var(--s)) calc(0px + var(--s)));
+    content: "";
+    filter: blur(10px);
+    inset: calc(-1*var(--s));
+    position: absolute;
+    transform: translate3d(0, 0, -1px);
+}
+
+/* end */
 
 /* Footer */
 .footer-area {
-    padding: 10px 0px;
     color: var(--starfield-white);
+    padding: 10px 0px;
 }
 
 .footer-underline {
-    height: 1px;
-    width: 70px;
     background-color: var(--droid-silver);
+    height: 1px;
     margin: 10px auto;
+    width: 70px;
 }
 
 .footer-content {
@@ -150,19 +179,19 @@ button.navbar-toggler {
 .neon-button-blue {
     background-color: transparent;
     border: 3px solid var(--holo-cyan);
-    border-radius: 5px;
-    color: var(--holo-cyan);
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
     box-shadow: 0 0 5px var(--holo-cyan),
         0 0 10px var(--holo-cyan),
         inset 0 0 5px var(--holo-cyan),
         inset 0 0 10px var(--holo-cyan);
+    border-radius: 5px;
+    color: var(--holo-cyan);
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
 }
 
 .neon-button-blue:hover {
@@ -176,19 +205,19 @@ button.navbar-toggler {
 .neon-button-red {
     background-color: transparent;
     border: 3px solid var(--sith-red);
-    border-radius: 5px;
-    color: var(--sith-red);
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
     box-shadow: 0 0 5px var(--sith-red),
         0 0 10px var(--sith-red),
         inset 0 0 5px var(--sith-red),
         inset 0 0 10px var(--sith-red);
+    border-radius: 5px;
+    color: var(--sith-red);
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
 }
 
 .neon-button-red:hover {
@@ -202,19 +231,19 @@ button.navbar-toggler {
 .neon-button-green {
     background-color: transparent;
     border: 3px solid var(--lightsaber-green);
-    border-radius: 5px;
-    color: var(--lightsaber-green);
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
     box-shadow: 0 0 5px var(--lightsaber-green),
         0 0 10px var(--lightsaber-green),
         inset 0 0 5px var(--lightsaber-green),
         inset 0 0 10px var(--lightsaber-green);
+    border-radius: 5px;
+    color: var(--lightsaber-green);
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
 }
 
 .neon-button-green:hover {
@@ -279,15 +308,47 @@ p>span {
     color: var(--holo-cyan);
 }
 
+/* Card Deck */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Card */
 .card {
     background-color: var(--droid-silver);
     border: 5px solid var(--holo-cyan);
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
 }
 
 .card-title {
     background-color: var(--void-grey);
     color: var(--blaze-orange);
     padding: 1rem;
+}
+
+.card-body {
+    color: var(--galactic-blue);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card a.link {
+    margin-top: auto;
+}
+
+.card-text {
+    color: var(--galactic-blue);
+    flex: 1;
 }
 
 /* Account pages */
@@ -345,6 +406,42 @@ label {
     color: var(--sith-red);
 }
 
+.equal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    border-radius: 20px;
+    color: var(--starfield-white);
+    height: 70%;
+    text-align: center;
+}
+
+.modal-card {
+    background-color: var(--galactic-blue);
+}
+
+.modal-content {
+    border: 2px solid var(--droid-silver);
+}
+
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+    background: var(--void-grey);
+}
+
+.btn-close {
+    background-color: var(--holo-cyan);
+}
+
 /* Privacy Policy page */
 .policy-p {
     color: var(--blaze-orange);
@@ -355,6 +452,9 @@ label {
 }
 
 ul {
-    padding-left: 1rem;
     list-style-type: circle;
+    padding-left: 1rem;
 }
+
+/* --------------- */
+/* Media quries */

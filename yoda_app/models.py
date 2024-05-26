@@ -1,4 +1,6 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
+from django.utils.text import slugify
 
 
 class FAQ(models.Model):
@@ -23,9 +25,23 @@ class Article(models.Model):
     class Meta:
         verbose_name_plural = 'Articles'
 
+    image = CloudinaryField('image', default='placeholder')
     title = models.CharField(max_length=200)
     body = models.TextField()
     link = models.URLField(max_length=200)
+    slug = models.SlugField(unique=True, blank=True)
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+            # Ensure slug is unique
+            unique_slug = self.slug
+            num = 1
+            while Article.objects.filter(slug=unique_slug).exists():
+                unique_slug = f"{self.slug}-{num}"
+                num += 1
+            self.slug = unique_slug
+        super().save(*args, **kwargs)

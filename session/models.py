@@ -3,13 +3,13 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 class Session(models.Model):
-    CHARACTERS = [
-        (0, 'Yoda1'),
-        (1, 'Yoda2'),
-        (3, 'Yoda3'),
-        (4, 'Yoda4'),
-        (5, 'Yoda5'),
-    ]
+    # CHARACTERS = [
+    #     (0, 'Yoda1'),
+    #     (1, 'Yoda2'),
+    #     (3, 'Yoda3'),
+    #     (4, 'Yoda4'),
+    #     (5, 'Yoda5'),
+    # ]
     DIFFICULTY = [
         (0, 'Easy'),
         (1, 'Medium'),
@@ -19,8 +19,9 @@ class Session(models.Model):
     # slug = models.SlugField(max_length=200, unique=True)
     session_user = models.ForeignKey(
     User, on_delete=models.CASCADE, related_name="user_sessions")
-    character = models.IntegerField(choices=CHARACTERS, default=0)
+    character = models.CharField(max_length=200, blank=False)
     level = models.IntegerField(choices=DIFFICULTY, default=0)
+    medition_selected = models.CharField(max_length=200, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     
@@ -34,6 +35,10 @@ class Character(models.Model):
     name = models.CharField(max_length=200, unique=True)
     description = models.TextField(blank=True)
     image = CloudinaryField('image', default='placeholder')
+    med_one = CloudinaryField('med_1', default='placeholder')
+    med_two = CloudinaryField('med_2', default='placeholder')
+    meditation_one_name =  models.CharField(max_length=200)
+    meditation_two_name =  models.CharField(max_length=200)
     meditation_technique_one = models.TextField(blank=True)
     meditation_technique_two = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
@@ -43,4 +48,4 @@ class Character(models.Model):
         ordering = ["-created_on"]
     
     def __str__(self):
-        return f"Character name {self.name}"
+        return self.name
