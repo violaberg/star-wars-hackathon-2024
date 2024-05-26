@@ -20,6 +20,11 @@ def contact(request):
     return render(request, "yoda_app/contact.html")
 
 
+def privacy_policy(request):
+    """ A view to return the privacy_policy page"""
+    return render(request, "yoda_app/privacy_policy.html")
+
+
 def faq(request):
     """ A view to return the FAQ page"""
     faqs = FAQ.objects.all()

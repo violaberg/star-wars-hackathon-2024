@@ -1,5 +1,5 @@
 :root {
-    --deep-blue: #00050f;
+    --galactic-blue: #00050f;
     --tatooine-yellow: #ffcc00;
     --blaze-orange: #ff8c00;
     --sith-red: #ff0000;
@@ -15,6 +15,10 @@ body {
     height: 100%;
 }
 
+ main {
+    flex: 1;
+ }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -22,7 +26,7 @@ body {
 }
 
 body {
-    background-color: var(--deep-blue);
+    background-color: var(--galactic-blue);
     font-family: "Share Tech Mono", monospace;
     color: var(--starfield-white);
 }
@@ -35,8 +39,12 @@ h2 {
     color: var(--lightsaber-green);
 }
 
+h3 {
+    color: var(--tatooine-yellow);
+}
+
 a.link {
-    color: var(--deep-blue);
+    color: var(--galactic-blue);
     text-decoration: none;
 }
 
@@ -49,6 +57,10 @@ a.link:hover {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--lightsaber-green);
+}
+
+.brand-name {
+    font-family: "Climate Crisis", sans-serif;
 }
 
 .navbar-custom {
@@ -67,9 +79,15 @@ a.nav-link:hover {
     color: var(--tatooine-yellow);
 }
 
+button.navbar-toggler {
+    color: var(--droid-silver);
+    box-shadow: 1px 1px 2px var(--blaze-orange),
+    3px 1px 1px var(--sith-red);
+}
+
 /* Footer */
 .footer-area {
-    padding: 20px 0px;
+    padding: 10px 0px;
     color: var(--starfield-white);
 }
 
@@ -84,11 +102,13 @@ a.nav-link:hover {
     color: var(--lightsaber-green);
 }
 
-.footer-link {
+.footer-link,
+.policy-link {
     color: var(--holo-cyan);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.policy-link:hover {
     color: var(--blaze-orange);
 }
 
@@ -113,15 +133,19 @@ a.nav-link:hover {
 .img-hover-zoom {
     overflow: hidden;
 }
+
 .img-hover-zoom img {
     transition: transform .5s ease;
 }
+
 .img-hover-zoom:hover img {
     transform: scale(1.2);
 }
+
 .no-underline {
     text-decoration: none !important;
 }
+
 /* Buttons */
 .neon-button-blue {
     background-color: transparent;
@@ -227,8 +251,9 @@ a.nav-link:hover {
     padding: 1rem;
 }
 
+h1,
 .glowing-text {
-    color: var(--lightsaber-green);
+    color: var(--starfield-white);
     text-shadow:
         0 0 5px #00ff00,
         0 0 10px #00ff00,
@@ -247,6 +272,7 @@ a.nav-link:hover {
 
 .about-content {
     color: var(--starfield-white);
+    text-align: justify;
 }
 
 p>span {
@@ -286,16 +312,20 @@ label {
 }
 
 /* FAQ page */
-.faq-card {
+.accordion-item {
+    background-color: var(--holo-cyan);
+}
+
+.accordion-button.collapsed,
+.accordion-button:not(.collapsed) {
+    background: var(--void-grey);
+    color: var(--tatooine-yellow);
+}
+
+.accordion-body {
     background-color: var(--droid-silver);
-}
-
-.faq-section {
-    border: 3px solid var(--blaze-orange);
-}
-
-.faq-card-header {
-    color: var(--deep-blue);
+    color: var(--galactic-blue);
+    text-align: justify;
 }
 
 /* Session app */
@@ -330,4 +360,18 @@ label {
     background-position: center;
     border-radius: 20px;
     height: 70%;
+}
+
+/* Privacy Policy page */
+.policy-p {
+    color: var(--blaze-orange);
+}
+
+.policy-text {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 1rem;
+    list-style-type: circle;
 }
