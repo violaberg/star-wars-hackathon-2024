@@ -94,6 +94,27 @@ A deep, almost black-blue, reminiscent of the vast and mysterious outer space.
 <br><br>
 ### **Typography**
 
+All fonts used throughout the application were sourced from [Google Fonts](https://fonts.google.com/).
+
+#### **'Climate Crisis' Font**
+- Used for: INNER FORCE logo and headings, as well as IF favicon
+- Climate Crisis delivers a bold, impactful aesthetic reminiscent of traditional Star Wars title sequences, therefore we strategically used it to draw the users attention to important elements, such as our logo and key headings. This font adds an engaging and thematic element to the app aesthetics, without compromising accessibility. 
+<br><br>
+
+![ClimateCrisisFont](static/images/fonts/google-fonts-climate-crisis-screenshot.png)
+<br><br>
+
+
+#### **'Share Tech Mono' Font**
+- Used for: all other text within application
+-  The monospaced nature of Share Tech Mono ensures clarity and readability, which is essential for our meditation instructions and navigation menus, thus fostering an intuitive user experience. The font also has a sleek, modern typeface reminiscent of futuristic controls and interfaces  thereby seamlessly aligning with the sci-fi aesthetic of the Star Wars universe and enhancing immersion for our users.
+<br><br>
+
+![ShareTechMonoFont](static/images/fonts/google-fonts-share-tech-mono-screenshot.png)
+<br><br>
+
+
+
 ### **Wireframes**
 
 <hr>
