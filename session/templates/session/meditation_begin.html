@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
@@ -6,51 +6,60 @@
 <!-- meditation_begin.html content starts here -->
 
 
-<div class="container my-3 back" style="background-image: url('{% static 'images/' %}')">
-        <div class="background-op mt-5">
-            <h1 class="text-center">Meditation Begins</h1>
-            <p class="session-character">Character: {{ character }}</p>
-            <p class="session-user">Username: {{ username }}</p>
-            <p class="session-level">Level: {{ level }}</p>
-            <p class="session-name">Meditation name:{{ meditation }}</p>
-            {% if level == 'Easy' %}
-            <p>Beginner Level:
-                Focus: Basic techniques for calming the mind and focusing attention.<br>
-                Duration: Short sessions (5-10 minutes).<br>
-                Techniques:
-                Breath Awareness: Focusing on the breath to anchor the mind.<br>
-                Body Scan: Bringing attention to different parts of the body to release tension.<br>
-                Guided Imagery: Using mental images to create a sense of calm and relaxation.<br></p>
-                <strong>NOW RELAX AND PRESS START TO BEGIN MEDITATION</strong>
-            {% elif level == 'Medium' %}
-            <p>
-                Intermediate Level:
-                Focus: Developing deeper concentration and mindfulness.<br>
-                Duration: Moderate sessions (15-30 minutes).<br>
-                Techniques:
-                Mindfulness Meditation: Observing thoughts and sensations without attachment.<br>
-                Loving-Kindness Meditation (Metta): Cultivating feelings of compassion and kindness.<br>
-                Mantra Meditation: Repeating a word or phrase to focus the mind.<br></p>
-                <strong>NOW RELAX AND PRESS START TO BEGIN MEDITATION</strong>
-            {% else %}
-            <p>
-                Advanced Level:
-                Focus: Achieving profound states of awareness and insight.<br>
-                Duration: Longer sessions (30 minutes to an hour or more).<br>
-                Techniques:
-                Vipassana Meditation: Insight meditation focusing on impermanence, suffering, and non-self.<br>
-                Zen Meditation (Zazen): Sitting meditation that emphasizes just sitting and awareness of the present moment.<br>
-                Transcendental Meditation: Using a specific mantra to transcend ordinary thought processes.<br>
-                <strong>NOW RELAX AND PRESS START TO BEGIN MEDITATION</strong>
-            </p>
-            {% endif %}
-            <div class="audio-player mt-3">
-                <audio id="background-audio" src="{% static 'sounds/Sonder.mp3' %}" preload="auto"></audio>
-                <button id="play-button" class="btn btn-primary">Start</button>
-                <button id="stop-button" class="btn btn-danger">Stop</button>
-                <button id="reset-button" class="btn btn-primary">Reset</button>
-            </div>
+<div class="container my-3 back">
+    <h1 class="text-center">Start Your Meditation</h1>
+    <div class="background-op p-3 mt-5 rounded" style="background-image: url('{% static 'images/' %}')">
+        <p class="session-character"><span class="meditation-span">Character:</span> {{ character }}</p>
+        <p class="session-user"><span class="meditation-span">Username:</span> {{ username }}</p>
+        <p class="session-level"><span class="meditation-span">Level:</span> {{ level }}</p>
+        <p class="session-name">
+            <spa class="meditation-span">Meditation name:</spa> {{ meditation }}
+        </p>
+        {% if level == 'Easy' %}
+        <p><span class="meditation-instructions">BEGINNER LEVEL:</span><br>
+            <span class="meditation-instructions2">Focus:</span> Basic techniques for calming the mind and focusing
+            attention.<br>
+            <span class="meditation-instructions2">Duration:</span> Short sessions (5-10 minutes).<br>
+            <span class="meditation-instructions">TECHNIQUES:</span><br>
+            <span class="meditation-instructions2">Breath Awareness:</span> Focusing on the breath to anchor the
+            mind.<br>
+            <span class="meditation-instructions2">Body Scan:</span> Bringing attention to different parts of the body
+            to release tension.<br>
+            <span class="meditation-instructions2">Guided Imagery:</span> Using mental images to create a sense of calm
+            and relaxation.<br>
+        </p>
+        <strong class="start-meditation">NOW RELAX AND PRESS START TO BEGIN MEDITATION</strong>
+        {% elif level == 'Medium' %}
+        <p>
+            <span class="meditation-instructions">INTERMEDIATE LEVEL:</span><br>
+            <span class="meditation-instructions2">Focus:</span> Developing deeper concentration and mindfulness.<br>
+            <span class="meditation-instructions2">Duration:</span> Moderate sessions (15-30 minutes).<br>
+            <span class="meditation-instructions">TECHNIQUES:</span><br>
+            <span class="meditation-instructions2">Mindfulness Meditation:</span> Observing thoughts and sensations without attachment.<br>
+            <span class="meditation-instructions2">Loving-Kindness Meditation (Metta):</span> Cultivating feelings of compassion and kindness.<br>
+            <span class="meditation-instructions2">Mantra Meditation:</span> Repeating a word or phrase to focus the mind.<br>
+        </p>
+        <strong class="start-meditation">NOW RELAX AND PRESS START TO BEGIN MEDITATION</strong>
+        {% else %}
+        <p>
+            <span class="meditation-instructions">ADVANCED LEVEL:</span><br>
+            <span class="meditation-instructions2">Focus:</span> Achieving profound states of awareness and insight.<br>
+            <span class="meditation-instructions2">Duration:</span> Longer sessions (30 minutes to an hour or more).<br>
+            <span class="meditation-instructions">TECHNIQUES:</span><br>
+            <span class="meditation-instructions2">Vipassana Meditation:</span> Insight meditation focusing on impermanence, suffering, and non-self.<br>
+            <span class="meditation-instructions2">Zen Meditation (Zazen):</span> Sitting meditation that emphasizes just sitting and awareness of the present
+            moment.<br>
+            <span class="meditation-instructions2">Transcendental Meditation:</span> Using a specific mantra to transcend ordinary thought processes.<br>
+            <strong class="start-meditation">NOW RELAX AND PRESS START TO BEGIN MEDITATION</strong>
+        </p>
+        {% endif %}
+        <div class="audio-player mt-3">
+            <audio id="background-audio" src="{% static 'sounds/Sonder.mp3' %}" preload="auto"></audio>
+            <button id="play-button" class="neon-button-green btn my-2">Start</button>
+            <button id="stop-button" class="neon-button-red btn mx-2 my-2">Stop</button>
+            <button id="reset-button" class="neon-button-blue btn btn-primary my-2">Reset</button>
         </div>
+    </div>
 </div>
 <!-- meditation_begin.html content ends here -->
 

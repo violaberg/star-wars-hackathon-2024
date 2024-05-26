@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
 
@@ -8,37 +8,43 @@
 
 <div class="container mt-4 mr-1">
   <div class="row text-center mb-4">
-      {% if star_characters %}
-      {% for star in star_characters %}
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
-              <div class="card h-100 product-card">
-                <div class="img-hover-zoom">
-                  {% if "placeholder" in star.image.url %}
-                  <img src="https://lumiere-a.akamaihd.net/v1/images/5f4e48ae7cc5a900014b2369-image_4957e309.jpeg?region=0%2C48%2C1536%2C768" class="card-img-top"
-                      alt="Star wars Character" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#characterId-{{ forloop.counter }}">
-                  {% else %}
-                  <img src="{{ star.image.url }}" class="card-img-top" alt="The image of {{ star.name }}" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#characterId-{{ forloop.counter }}">
-                  {% endif %}
-                </div>
-                  <div class="card-body">
-                      <h2 class="card-title fs-6 text-truncate rounded" title='{{ star.name }}'><strong>{{ star.name }}</strong>
-                      </h2>
-                      <p class="list-group-item">{{ star.description | safe }}</p>
-                  </div>
-              </div>
+    {% if star_characters %}
+    {% for star in star_characters %}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+      <div class="card h-100 product-card">
+        <div class="img-hover-zoom">
+          {% if "placeholder" in star.image.url %}
+          <img
+            src="https://lumiere-a.akamaihd.net/v1/images/5f4e48ae7cc5a900014b2369-image_4957e309.jpeg?region=0%2C48%2C1536%2C768"
+            class="card-img-top" alt="Star wars Character" style="cursor:pointer; height: 250px" data-bs-toggle="modal"
+            data-bs-target="#characterId-{{ forloop.counter }}">
+          {% else %}
+          <img src="{{ star.image.url }}" class="card-img-top" alt="The image of {{ star.name }}"
+            style="cursor:pointer; height: 250px" data-bs-toggle="modal"
+            data-bs-target="#characterId-{{ forloop.counter }}">
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <h2 class="card-title fs-6 text-truncate rounded" title='{{ star.name }}'><strong>{{ star.name }}</strong>
+          </h2>
+          <p class="list-group-item">{{ star.description | safe }}</p>
+        </div>
       </div>
-      {% endfor %}
-      {% else %}
-      <p class="session-error">The Force is not with you, maybe try next time...Just Kidding project is under development.</p>
-      {% endif %}
+    </div>
+    {% endfor %}
+    {% else %}
+    <p class="session-error">The Force is not with you, maybe try next time...Just Kidding project is under development.
+    </p>
+    {% endif %}
   </div>
 </div>
 
 <!-- Modal Structure -->
 {% if star_characters %}
 {% for star in star_characters %}
-<div class="modal fade" id="characterId-{{ forloop.counter }}" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg bg-dark rounded">
+<div class="modal fade" id="characterId-{{ forloop.counter }}" tabindex="-1" aria-labelledby="imageModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg rounded">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title" id="imageModalLabel" name="{{ star.name }}">{{ star.name }}'s meditation</h1>
@@ -47,10 +53,11 @@
       <div class="modal-body d-flex align-items-stretch">
         <div class="row w-100">
           <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card mt-3 w-100">
+            <div class="modal-card card mt-3 w-100">
               <img src="{{ star.med_one.url }}" alt="Front Image" class="img-fluid equal-image">
               <div>
-                <h2 class="card-title text-center fs-6 text-truncate" name="meditation_one_name"><strong>{{ star.meditation_one_name | safe }}</strong></h2>
+                <h2 class="card-title text-center fs-6 text-truncate" name="meditation_one_name"><strong>{{
+                    star.meditation_one_name | safe }}</strong></h2>
                 <p style="color: white; padding: 10px;">{{ star.meditation_technique_one | safe }}</p>
               </div>
               <div class="container my-3">
@@ -63,7 +70,8 @@
                     <div class="col-10 col-md-8 col-lg-6">
                       <div class="m-4">
                         <div class="container d-flex align-items-center justify-content-center"></div>
-                        <button type="submit" class="neon-button-green rounded btn" style="width: 100%; padding: 10px; margin-top: 10px;">Start</button>
+                        <button type="submit" class="neon-button-green rounded btn"
+                          style="padding: 10px; margin-top: 10px;">Start</button>
                       </div>
                     </div>
                   </div>
@@ -72,10 +80,11 @@
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card mt-3 w-100">
+            <div class="modal-card card mt-3 w-100">
               <img src="{{ star.med_two.url }}" alt="Back Image" class="img-fluid equal-image">
               <div>
-                <h2 class="card-title text-center fs-6 text-truncate" name="meditation_two_name"><strong>{{ star.meditation_two_name | safe }}</strong></h2>
+                <h2 class="card-title text-center fs-6 text-truncate" name="meditation_two_name"><strong>{{
+                    star.meditation_two_name | safe }}</strong></h2>
                 <p style="color: white; padding: 10px;">{{ star.meditation_technique_two | safe }}</p>
               </div>
               <div class="container my-3">
@@ -87,8 +96,9 @@
                   <div class="row justify-content-center">
                     <div class="col-10 col-md-8 col-lg-6">
                       <div class="m-4">
-                        <div class="container d-flex align-items-center justify-content-center"></div>
-                        <button type="submit" class="neon-button-green rounded btn" style="width: 100%; padding: 10px; margin-top: 10px;">Start</button>
+                        <div class="container d-flex text-center align-items-center justify-content-center"></div>
+                        <button type="submit" class="neon-button-green rounded btn"
+                          style="padding: 10px; margin-top: 10px;">Start</button>
                       </div>
                     </div>
                   </div>
@@ -98,7 +108,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer mx-auto">
         <button type="button" class="btn neon-button-red" data-bs-dismiss="modal">Close</button>
       </div>
     </div>

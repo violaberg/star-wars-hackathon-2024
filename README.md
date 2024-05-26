@@ -88,13 +88,65 @@ A dark, charcoal grey, representing the emptiness and depth of the void.
 A deep, almost black-blue, reminiscent of the vast and mysterious outer space.
 
 
-
 <br><br>
 ![ColourPalette](static/images/colours/color-palette.png)
 <br><br>
 ### **Typography**
 
+All fonts used throughout the application were sourced from [Google Fonts](https://fonts.google.com/).
+
+#### **'Climate Crisis' Font**
+- Used for: INNER FORCE logo and headings, as well as IF favicon
+- Climate Crisis delivers a bold, impactful aesthetic reminiscent of traditional Star Wars title sequences, therefore we strategically used it to draw the users attention to important elements, such as our logo and key headings. This font adds an engaging and thematic element to the app aesthetics, without compromising accessibility. 
+<br><br>
+
+![ClimateCrisisFont](static/images/fonts/google-fonts-climate-crisis-screenshot.png)
+<br><br>
+
+
+#### **'Share Tech Mono' Font**
+- Used for: all other text within application
+-  The monospaced nature of Share Tech Mono ensures clarity and readability, which is essential for our meditation instructions and navigation menus, thus fostering an intuitive user experience. The font also has a sleek, modern typeface reminiscent of futuristic controls and interfaces  thereby seamlessly aligning with the sci-fi aesthetic of the Star Wars universe and enhancing immersion for our users.
+<br><br>
+
+![ShareTechMonoFont](static/images/fonts/google-fonts-share-tech-mono-screenshot.png)
+<br><br>
+
+<hr>
+
+## **UX / UI**
+
+### **User Stories**
+
+As a new user:
+- I can create an account so that I can save my progress and access personalized features
+- I can contact the admin for support or feedback so that I can get help with issues or suggest improvements for the app
+- I can learn about the creators and purpose of the app so that I can understand the mission and the team behind the app
+- I can find privacy policy so that I can understand how my personal data is collected, used, and protected
+- I can access a list of frequently asked questions so that I can received benefit
+- I want a navigation menu on every page so that I can navigate easily to other parts of the application
+- I can navigate back to the home page and visit other social websites so that I can visit other websites related to Star Wars and also can switch to the home page rapidly
+- I want to to access a README file so that I can see and understand what this project is about, gain clarity and understand the purpose of this website.
+- I can view a list of available guided meditations so that I can choose a session that fits my needs
+- I can set to receive daily reminders or notifications so that I can maintain a regular meditation practice
+- I can browse and select meditation sessions so that I can choose the one that fits my current needs and mood
+- I can have a seamless guided meditation experience so that I can fully immerse myself in the session without distractions
+-  I can access Star Wars music tailored for different meditation events so that I can enhance my meditation experience with thematic music
+<br><br>
+- As a returning user:
+ I can log in to my account so that I can continue my meditation practice from where I left off
+
+
+
 ### **Wireframes**
+
+![Wireframes Index](static/images/wireframes/wireframes-index.png)
+<br><br>
+![|Wireframes Sign Up Page](static/images/wireframes/wireframes-signup.png)
+<br><br>
+![Wireframes Home Page](static/images/wireframes/wireframes-homepage.png)
+<br><br>
+
 
 <hr>
 
@@ -117,14 +169,47 @@ A deep, almost black-blue, reminiscent of the vast and mysterious outer space.
 ## **TESTING**
 
 
-## **Technologies Used**
+## TECHNOLOGIES USED
 
-* Django
-* Python
-* JavaScript
-* Bootstrap
-* HTML
-* CSS
+### Languages Used
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org)
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com)
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML)
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS)
+
+ ## Frameworks, Libraries & Programs Used
+
+- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com)- GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku. 
+
+- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. Used for version control. 
+
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) - Connected to the GitHub repository, Heroku is a cloud application platform used to deploy this project so the backend language can be utilised/tested. Used for hosting the deployed back-end site.
+
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) - Django is a high-level web framework for building web applications rapidly with a clean and pragmatic design. Used as the Python framework for the site.
+
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently. Utilised for modern responsiveness and pre-built components.
+
+- [![Cloudinary](https://img.shields.io/badge/Cloudinary-purple?logo=cloudinary&logoColor=white)](https://cloudinary.com)- Cloudinary is a cloud-based media management platform that offers solutions for storing, optimising, and delivering images and videos for web and mobile applications. 
+
+- [![Summernote](https://img.shields.io/badge/Summernote-orange?logo=summernote&logoColor=white)](https://summernote.org/) - Summernote is a Django app that enables users to easily integrate a rich text editor into their web applications, enhancing event creation and description functionality. 
+
+- [![TinyPNG](https://img.shields.io/badge/TinyPNG-grey?logo=tinypng&logoColor=CE0908)](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimise image files for faster loading on webpages while maintaining visual quality. Used to Compress the images.
+
+- [![Google Fonts](https://img.shields.io/badge/Google_Fonts-blue?logo=google-fonts&logoColor=white)](https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography. Imported for fonts.
+
+- [![Beautify](https://img.shields.io/badge/Beautify-green?logo=beautify&logoColor=white)](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency. Used in Gitpod to help color code and spot errors.
+
+- [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://figma.com/) - Figma is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas. used for my wireframes.
+
+- [![Am I Responsive](https://img.shields.io/badge/Am_I_Responsive-blue?logoColor=white)](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sises, helping to ensure responsiveness and compatibility across platforms. Put my heroku url to check responsivity to all devices.
+
+- [![Diffchecker](https://img.shields.io/badge/Diffchecker-grey?logo=diffchecker&logoColor=white)](https://www.diffchecker.com/text-compare/) - Diffchecker is a text comparison tool used to highlight the differences between two blocks of text, facilitating comparison and analysis. Update my code against old code for validation.
+
+- [![W3C CSS Validator](https://img.shields.io/badge/W3C_CSS_Validator-grey?logo=css3&logoColor=white)](https://jigsaw.w3.org/css-validator/) - The W3C CSS Validator is a tool used to check the validity and syntax of CSS code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my CSS for validation.
+
+- [![W3C Markup Validator](https://img.shields.io/badge/W3C_Markup_Validator-grey?logo=html5&logoColor=white)](https://validator.w3.org/#validate_by_input) - The W3C Markup Validator is a tool used to check the validity and syntax of HTML code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my html for validation.
+
+<br>
 
 <hr>
 
@@ -146,7 +231,7 @@ Amanda Mascurine
 [LinkedIn](https://www.linkedin.com/in/amanda-mascurine/) | [GitHub](https://github.com/AmandaCIdev)
 
 Kati Molnar
-[LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com/molnarlin)
+[LinkedIn]([https://www.linkedin.com/in/katalin-molnar-b6a694165/]) | [GitHub](https://github.com/molnarlin)
 
 Katarina Nadia
 [LinkedIn](https://linkedin.com/k-nadia) | [GitHub](https://github.com/k-nadia)
@@ -160,6 +245,8 @@ Special thanks to:
 
 - **CodeInstitute** for organizing the Hackathon.
 
+- https://www.youtube.com/watch?v=ZY_PmJX6dAo reference for starry sky background on the contact page from Divinector.
 
+- https://www.youtube.com/watch?v=l-1ZrU6avzI for breathing circle from Traversy Media.
 
 [def]: images/AmIResponsive-PLACEHOLDER.png
