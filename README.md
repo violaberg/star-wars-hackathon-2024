@@ -23,7 +23,7 @@ Our unique meditation app harnesses the cutting-edge Hemi-Sync technology to syn
 
 ![AmIResponsive](static/images/AmIResponsive-PLACEHOLDER.png)
 
-<br>
+
 
 ## Criteria
 Our team addressed the following Hackathon criteria with innovative solutions:
@@ -46,6 +46,7 @@ We aim to:
 - Continuously improve app performance, ensuring smooth, bug-free operation to provide a reliable and seamless user experience.
 
 <hr>
+<br>
 
 ## **DESIGN**
 
@@ -88,7 +89,6 @@ A dark, charcoal grey, representing the emptiness and depth of the void.
 A deep, almost black-blue, reminiscent of the vast and mysterious outer space.
 
 
-
 <br><br>
 ![ColourPalette](static/images/colours/color-palette.png)
 <br><br>
@@ -113,9 +113,41 @@ All fonts used throughout the application were sourced from [Google Fonts](https
 ![ShareTechMonoFont](static/images/fonts/google-fonts-share-tech-mono-screenshot.png)
 <br><br>
 
+<hr>
+
+## **UX / UI**
+
+### **User Stories**
+
+As a new user:
+- I can create an account so that I can save my progress and access personalized features
+- I can contact the admin for support or feedback so that I can get help with issues or suggest improvements for the app
+- I can learn about the creators and purpose of the app so that I can understand the mission and the team behind the app
+- I can find privacy policy so that I can understand how my personal data is collected, used, and protected
+- I can access a list of frequently asked questions so that I can received benefit
+- I want a navigation menu on every page so that I can navigate easily to other parts of the application
+- I can navigate back to the home page and visit other social websites so that I can visit other websites related to Star Wars and also can switch to the home page rapidly
+- I want to to access a README file so that I can see and understand what this project is about, gain clarity and understand the purpose of this website.
+- I can view a list of available guided meditations so that I can choose a session that fits my needs
+- I can set to receive daily reminders or notifications so that I can maintain a regular meditation practice
+- I can browse and select meditation sessions so that I can choose the one that fits my current needs and mood
+- I can have a seamless guided meditation experience so that I can fully immerse myself in the session without distractions
+-  I can access Star Wars music tailored for different meditation events so that I can enhance my meditation experience with thematic music
+<br><br>
+As a returning user:
+ - I can log in to my account so that I can continue my meditation practice from where I left off
+
 
 
 ### **Wireframes**
+
+![Wireframes Index](static/images/wireframes/wireframes-index.png)
+<br><br>
+![|Wireframes Sign Up Page](static/images/wireframes/wireframes-signup.png)
+<br><br>
+![Wireframes Home Page](static/images/wireframes/wireframes-homepage.png)
+<br><br>
+
 
 <hr>
 
