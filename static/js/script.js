@@ -14,3 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
         audio.play();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const starsContainer = document.querySelector('.stars');
+  const numStars = 500;
+
+  for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.animationDelay = `${Math.random() * 2}s`;
+      star.style.animationDuration = `${Math.random() * 2 + 2}s`;
+      starsContainer.appendChild(star);
+  }
+});
