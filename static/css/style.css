@@ -447,6 +447,10 @@ label {
     background-color: var(--holo-cyan);
 }
 
+.session-error {
+    color: var(--sith-red);
+}
+
 /* Privacy Policy page */
 .policy-p {
     color: var(--blaze-orange);
@@ -474,4 +478,4 @@ ul {
     margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(0* var(--bs-gutter-x));
     margin-left: calc(0* var(--bs-gutter-x));
-  }
+}

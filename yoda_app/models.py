@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
+from django_summernote.fields import SummernoteTextField
 from django.utils.text import slugify
 
 
@@ -27,7 +28,7 @@ class Article(models.Model):
 
     image = CloudinaryField('image', default='placeholder')
     title = models.CharField(max_length=200)
-    body = models.TextField()
+    body = SummernoteTextField()
     link = models.URLField(max_length=200)
     slug = models.SlugField(unique=True, blank=True)
 
