@@ -249,4 +249,12 @@ Special thanks to:
 
 - https://www.youtube.com/watch?v=l-1ZrU6avzI for breathing circle from Traversy Media.
 
+- Star Wars wallpaper: https://wallpapers.com/wallpapers/star-wars-3440x1440-2uf5to0h0yrjwcdy/download
+
+- Music from https://www.chosic.com/free-music/all/
+
+- Music from https://purrplecat.com/
+
+- Sound effects from https://pixabay.com/sound-effects/search/star-wars
+
 [def]: images/AmIResponsive-PLACEHOLDER.png
