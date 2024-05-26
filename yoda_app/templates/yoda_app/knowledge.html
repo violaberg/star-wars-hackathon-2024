@@ -3,28 +3,32 @@
 
 {% block content %}
 
-<!-- knowledge.html content start here -->
-
 <h1 class="text-center">Articles and Resources</h1>
 
 <div class="article-container mx-auto">
     <div class="row mx-auto">
-        {% for article in articles %}
-        <div class="col-md-4 col-sm-6 mb-3">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h3 class="card-title text-center">{{ article.title }}</h3>
-                    <p class="card-text">
-                        {{ article.body }}
-                    </p>
-                    <a href="{{ article.link }}" class="link"><i
-                            class="icon px-2 fa-solid fa-link"></i>Read More</a>
+        <div class="card-deck d-flex mx-auto">
+            {% for article in articles %}
+            <div class="col-md-4 col-sm-6 mb-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    {% if article.image %}
+                    <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                    {% else %}
+                    <img src="{% static 'images/placeholder.png' %}" class="card-img-top" alt="Placeholder Image">
+                    {% endif %}
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-center">{{ article.title }}</h3>
+                        <p class="card-text">
+                            {{ article.body }}
+                        </p>
+                        <a href="{{ article.link }}" class="link"><i class="icon px-2 fa-solid fa-link"></i>Read
+                            More</a>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 
-<!-- knowledge.html content ends here -->
 {% endblock %}
