@@ -51,18 +51,46 @@ We aim to:
 
 ### **Colours**
 
-    --galactic-blue: #00050F;
-    --tatooine-yellow: #FFCC00;
-    --blaze-orange: #FF8C00;
-    --sith-red: #FF0000;
-    --holo-cyan: #00FFFF;
-    --lightsaber-green: #00FF00;
-    --droid-silver: #C0C0C0;
-    --starfield-white: #F6F6F7;
-    --void-grey: #101313
+![StarfieldWhite](static/images/colours/root-color-starfield-white-f6f6f7.png)
+<br>
+A soft, almost pure white, suggesting the shimmering stars in the night sky.
+
+![TatooineYellow](static/images/colours/root-color-tattooine-yellow-ffcc00.png)
+<br>
+A bright, warm yellow, evoking the golden sands and twin suns of Tatooine.
+
+![BlazeOrange](static/images/colours/root-color-blaze-orange-ff8c00.png)
+<br>
+A vibrant, fiery orange, symbolizing the intense heat and energy of a blazing star.
+
+![SithRed](static/images/colours/root-color-sith-red-ff0000.png)
+<br>
+A bold, intense red, representing the power and menace of the Sith.
+
+![HoloCyan](static/images/colours/root-color-holo-cyan-00ffff.png)
+<br>
+A cool, luminous cyan, capturing the futuristic glow of holographic displays.
+
+![LightsaberGreen](static/images/colours/root-color-lightsaber-green-00ff00.png)
+<br>
+A striking, neon green, inspired by the iconic color of a Jedi's lightsaber.
+
+![DroidSilver](static/images/colours/root-color-droid-silver-c0c0c0.png)
+<br>
+A sleek, metallic silver, reflecting the polished exterior of advanced droids.
+
+![VoidGrey](static/images/colours/root-color-void-grey-101313.png)
+<br>
+A dark, charcoal grey, representing the emptiness and depth of the void.
+
+![GalacticBlue](static/images/colours/root-color-galactic-blue-00050f.png)
+<br>
+A deep, almost black-blue, reminiscent of the vast and mysterious outer space.
+
+
 
 <br><br>
-![ColourPalette](static/images/color-palette.png)
+![ColourPalette](static/images/colours/color-palette.png)
 <br><br>
 ### **Typography**
 
