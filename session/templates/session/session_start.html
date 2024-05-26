@@ -44,59 +44,57 @@
         <h1 class="modal-title" id="imageModalLabel" name="{{ star.name }}">{{ star.name }}'s meditation</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="modal-card col-md-6 card mt-3">
-            <img src="{{ star.med_one.url }}" alt="Front Image" class="img-fluid equal-image">
-            <div>
-              <h2 class="card-title text-center fs-6 text-truncate" name="meditation_one_name"><strong>{{ star.meditation_one_name | safe }}</strong>
-              </h2>
-          </div>
-          <div class="container my-3">
-            <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
-              {{ session_form | crispy }}
-              <input type="hidden" name="meditation_one_name" value="{{ star.meditation_one_name }}">
-              <input type="hidden" name="name" value="{{ star.name }}">
-                {% csrf_token %}
-                <div class="row justify-content-center">
-                    <div class="col-10 col-md-8 col-lg-6">
-                        <div class="m-4">
-                            <div class="container d-flex align-items-center justify-content-center">
-                            </div>
-                            <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
-                            Start
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-          </div>
-          </div>
-          <div class="modal-card col-md-6 card mt-3">
-            <img src="{{ star.med_two.url }}" alt="Back Image" class="img-fluid equal-image">
-            <div>
-              <h2 class="card-title text-center fs-6 text-truncate" name="meditation_two_name"><strong>{{ star.meditation_two_name | safe }}</strong>
-              </h2>
-          </div>
-          <div class="container my-3">
-          <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
-            {{ session_form | crispy }}
-            <input type="hidden" name="meditation_two_name" value="{{ star.meditation_two_name }}">
-            <input type="hidden" name="name" value="{{ star.name }}">
-              {% csrf_token %}
-              <div class="row justify-content-center">
-                  <div class="col-10 col-md-8 col-lg-6">
-                      <div class="m-4">
-                          <div class="container d-flex align-items-center justify-content-center">
-                          </div>
-                          <button type="submit" class="neon-button-green rounded btn" style="width: 100%;">
-                          Start
-                          </button>
-                      </div>
-                  </div>
+      <div class="modal-body d-flex align-items-stretch">
+        <div class="row w-100">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card mt-3 w-100">
+              <img src="{{ star.med_one.url }}" alt="Front Image" class="img-fluid equal-image">
+              <div>
+                <h2 class="card-title text-center fs-6 text-truncate" name="meditation_one_name"><strong>{{ star.meditation_one_name | safe }}</strong></h2>
+                <p style="color: white; padding: 10px;">{{ star.meditation_technique_one | safe }}</p>
               </div>
-          </form>
-        </div>
+              <div class="container my-3">
+                <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
+                  {{ session_form | crispy }}
+                  <input type="hidden" name="meditation_one_name" value="{{ star.meditation_one_name }}">
+                  <input type="hidden" name="name" value="{{ star.name }}">
+                  {% csrf_token %}
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-md-8 col-lg-6">
+                      <div class="m-4">
+                        <div class="container d-flex align-items-center justify-content-center"></div>
+                        <button type="submit" class="neon-button-green rounded btn" style="width: 100%; padding: 10px; margin-top: 10px;">Start</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card mt-3 w-100">
+              <img src="{{ star.med_two.url }}" alt="Back Image" class="img-fluid equal-image">
+              <div>
+                <h2 class="card-title text-center fs-6 text-truncate" name="meditation_two_name"><strong>{{ star.meditation_two_name | safe }}</strong></h2>
+                <p style="color: white; padding: 10px;">{{ star.meditation_technique_two | safe }}</p>
+              </div>
+              <div class="container my-3">
+                <form id="sessionForm" method="post" style="background-image: url('{{ STATIC_URL }}yoda_logo.png')">
+                  {{ session_form | crispy }}
+                  <input type="hidden" name="meditation_two_name" value="{{ star.meditation_two_name }}">
+                  <input type="hidden" name="name" value="{{ star.name }}">
+                  {% csrf_token %}
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-md-8 col-lg-6">
+                      <div class="m-4">
+                        <div class="container d-flex align-items-center justify-content-center"></div>
+                        <button type="submit" class="neon-button-green rounded btn" style="width: 100%; padding: 10px; margin-top: 10px;">Start</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
