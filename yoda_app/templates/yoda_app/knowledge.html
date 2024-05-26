@@ -10,7 +10,7 @@
         <div class="card-deck d-flex mx-auto">
             {% for article in articles %}
             <div class="col-md-4 col-sm-6 mb-3 d-flex align-items-stretch">
-                <div class="card" style="width: 18rem;">
+                <div class="card text-center text-decoration-none" style="width: 18rem;">
                     <a href="{% url 'article_detail' slug=article.slug %}">
                         {% if article.image %}
                         <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
@@ -19,8 +19,8 @@
                         {% endif %}
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <h3 class="card-title text-center">{{ article.title }}</h3>
-                        <p class="card-text">
+                        <h3 class="card-title text-center rounded">{{ article.title }}</h3>
+                        <p class="article-body card-text">
                             {{ article.body|truncatewords:20 }}
                         </p>
                         <a href="{% url 'article_detail' slug=article.slug %}" class="link mt-auto"><i class="icon px-2 fa-solid fa-link"></i>Read More</a>

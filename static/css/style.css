@@ -389,6 +389,11 @@ label {
     text-align: justify;
 }
 
+/* Article page */
+.article-body {
+    text-align: justify;
+}
+
 /* Session app */
 .session-name {
     color: var(--tatooine-yellow);
