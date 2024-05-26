@@ -437,6 +437,19 @@ label {
     text-align: justify;
 }
 
+.article-image {
+    border: 3px solid var(--holo-cyan);
+    max-width: 50%;
+}
+
+.article-link {
+    color: var(--blaze-orange);
+}
+
+.article-link:hover {
+    color: var(--tatooine-yellow);
+}
+
 /* Session app */
 .session-name {
     color: var(--tatooine-yellow);
