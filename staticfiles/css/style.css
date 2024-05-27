@@ -10,10 +10,63 @@
     --void-grey: #101313;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
+
+body {
+    background-color: var(--galactic-blue);
+    color: var(--starfield-white);
+    font-family: "Share Tech Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stars */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    /* Ensure stars are behind other content */
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--starfield-white);
+    border-radius: 50%;
+    animation: shine 2s infinite ease-in-out;
+}
+
+@keyframes shine {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* end stars */
 
 main {
     flex: 1;
@@ -23,12 +76,6 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-}
-
-body {
-    background-color: var(--galactic-blue);
-    color: var(--starfield-white);
-    font-family: "Share Tech Mono", monospace;
 }
 
 h4 {
@@ -312,7 +359,7 @@ p>span {
 .card-deck {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     justify-content: center;
 }
 
@@ -373,14 +420,10 @@ label {
 }
 
 /* FAQ page */
-.accordion-item {
-    background-color: var(--holo-cyan);
-}
-
 .accordion-button.collapsed,
 .accordion-button:not(.collapsed) {
     background: var(--void-grey);
-    color: var(--tatooine-yellow);
+    color: var(--blaze-orange);
 }
 
 .accordion-body {
@@ -392,6 +435,19 @@ label {
 /* Article page */
 .article-body {
     text-align: justify;
+}
+
+.article-image {
+    border: 3px solid var(--holo-cyan);
+    max-width: 50%;
+}
+
+.article-link {
+    color: var(--blaze-orange);
+}
+
+.article-link:hover {
+    color: var(--tatooine-yellow);
 }
 
 /* Session app */
@@ -451,6 +507,56 @@ label {
     color: var(--sith-red);
 }
 
+.background-op {
+    background-color: var(--void-grey);
+    border: 3px solid var(--blaze-orange);
+    color: var(--starfield-white);
+}
+
+.meditation-span,
+.meditation-instructions {
+    color: var(--droid-silver);
+}
+
+.start-meditation {
+    color: var(--blaze-orange);
+}
+
+.meditation-instructions2 {
+    color: var(--lightsaber-green);
+}
+
+.modal-card {
+    background-color: var(--void-grey);
+}
+
+/* Profile */
+.profile-img {
+    background-color: var(--galactic-blue);
+    border: 3px solid var(--droid-silver);
+    width: 66%;
+}
+
+.profile-container {
+    width: 50%;
+}
+
+input,
+select {
+    background: var(--starfield-white);
+    padding: 0.3rem;
+    width: 50%;
+}
+
+.profile-level {
+    color: var(--tatooine-yellow);
+    font-size: 20px;
+}
+
+.level-cat {
+    color: var(--blaze-orange);
+}
+
 /* Privacy Policy page */
 .policy-p {
     color: var(--blaze-orange);
@@ -467,7 +573,11 @@ ul {
 
 /* --------------- */
 /* Media quries */
-
+@media screen and (max-width: 318px) {
+    .width-fix-href{
+        width: 100%;
+    }
+}
 
 /* ----------- Fixed bugs ------------ */
 .row {
