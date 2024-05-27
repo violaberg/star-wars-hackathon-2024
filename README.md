@@ -271,6 +271,8 @@ Overall, the 'Footer' section was thoughtfully crafted to not only provide impor
 
 - [![W3C Markup Validator](https://img.shields.io/badge/W3C_Markup_Validator-grey?logo=html5&logoColor=white)](https://validator.w3.org/#validate_by_input) - The W3C Markup Validator is a tool used to check the validity and syntax of HTML code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my html for validation.
 
+- [![Lighthouse](https://img.shields.io/badge/Lighthouse-grey?logo=google-chrome&logoColor=red)](https://developer.chrome.com/docs/lighthouse)- an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing. Check for validation.
+
 ## Image Credits
 
 Image Credits:
