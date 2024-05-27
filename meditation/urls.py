@@ -22,7 +22,7 @@ from yoda_app import views as index_views
 urlpatterns = [
     path('', include('yoda_app.urls')),
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
+    path("accounts/", include("allauth.urls")),
     path('session/', include('session.urls'),name='session-urls'),
     path('userprofile/', include('userprofile.urls')),
 ]
