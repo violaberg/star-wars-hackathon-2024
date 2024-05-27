@@ -33,7 +33,13 @@
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2005/07/07/oth28.html" target="_blank" title="Star Wars Lightsaber"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Star Wars Lightsaber" style="position:absolute; top: 0px; right: 0px;" /></a>
+    <style type="text/css">
+        * {
+            cursor: url(https://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
+        }
+    </style><a href="https://www.cursors-4u.com/cursor/2005/07/07/oth28.html" target="_blank"
+        title="Star Wars Lightsaber"><img src="https://cur.cursors-4u.net/cursor.png" border="0"
+            alt="Star Wars Lightsaber" style="position:absolute; top: 0px; right: 0px;" /></a>
     <div class="wrapper">
         <div class="stars"></div>
         <!-- Navigation -->
@@ -42,8 +48,9 @@
                 <a class="glowing-text navbar-brand" href="{% url 'index' %}">
                     <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="logo" class="logo">INNER FORCE
                 </a>
-                <button class="shadow navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="shadow navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
@@ -71,6 +78,9 @@
                                 href="{% url 'faq' %}"><i class="fas fa-question-circle"></i> FAQs</a>
                         </li>
                         {% if user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}"><i
+                                    class="fa-solid fa-user px-2"></i>My Profile</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
                         </li>
                         {% else %}
@@ -104,7 +114,7 @@
                     </span>
                     <a href="{% url 'faq' %}" target="_blank" class="footer-link text-decoration-none">FAQ</a> |
                     <a href="{% url 'privacy_policy' %}" target="_blank"
-                            class="footer-link text-decoration-none">Privacy Policy</a>
+                        class="footer-link text-decoration-none">Privacy Policy</a>
                     <span>
                         <a class="navbar-brand" href="https://www.youtube.com/@StarWars" target="_blank">
                             <i class="fa-brands fa-youtube"></i>
@@ -131,7 +141,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="{% static 'js/script.js' %}"></script>
-    
+
 </body>
 
 </html>

@@ -359,7 +359,7 @@ p>span {
 .card-deck {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     justify-content: center;
 }
 
@@ -435,6 +435,19 @@ label {
 /* Article page */
 .article-body {
     text-align: justify;
+}
+
+.article-image {
+    border: 3px solid var(--holo-cyan);
+    max-width: 50%;
+}
+
+.article-link {
+    color: var(--blaze-orange);
+}
+
+.article-link:hover {
+    color: var(--tatooine-yellow);
 }
 
 /* Session app */
@@ -517,6 +530,33 @@ label {
     background-color: var(--void-grey);
 }
 
+/* Profile */
+.profile-img {
+    background-color: var(--galactic-blue);
+    border: 3px solid var(--droid-silver);
+    width: 66%;
+}
+
+.profile-container {
+    width: 50%;
+}
+
+input,
+select {
+    background: var(--starfield-white);
+    padding: 0.3rem;
+    width: 50%;
+}
+
+.profile-level {
+    color: var(--tatooine-yellow);
+    font-size: 20px;
+}
+
+.level-cat {
+    color: var(--blaze-orange);
+}
+
 /* Privacy Policy page */
 .policy-p {
     color: var(--blaze-orange);
@@ -533,7 +573,11 @@ ul {
 
 /* --------------- */
 /* Media quries */
-
+@media screen and (max-width: 318px) {
+    .width-fix-href{
+        width: 100%;
+    }
+}
 
 /* ----------- Fixed bugs ------------ */
 .row {

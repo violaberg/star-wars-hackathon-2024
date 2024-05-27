@@ -7,19 +7,19 @@
     <div class="col-12">
       <h1 class="text-center">{{ article.title }}</h1>
       {% if article.image %}
-      <img src="{{ article.image.url }}" class="img-fluid mx-auto d-block" alt="{{ article.title }}">
+      <img src="{{ article.image.url }}" class="article-image img-fluid mx-auto my-4 rounded d-block" alt="{{ article.title }}">
       {% else %}
-      <img src="{% static 'images/placeholder.png' %}" class="img-fluid mx-auto d-block" alt="Placeholder Image">
+      <img src="{% static 'images/placeholder.png' %}" class="article-image img-fluid mx-auto my-4 rounded d-block" alt="Placeholder Image">
       {% endif %}
-      <div class="mt-3">
+      <div class="article-body mt-3">
         {{ article.body|linebreaks|safe }}
       </div>
-      <a href="{{ article.link }}" target="_blank" class="btn btn-primary mt-3">
+      <a href="{{ article.link }}" target="_blank" class="article-link mt-3 text-decoration-none">
         <i class="icon px-2 fa-solid fa-link text-decoration-none"></i>Source:
       </a>
     </div>
   </div>
 </div>
 
-<div class="text-center"><a href="{% url 'index' %}" class="neon-button-blue btn mb-4">Home</a></div>
+<div class="text-center"><a href="{% url 'index' %}" class="neon-button-blue btn my-4">Home</a></div>
 {% endblock %}
