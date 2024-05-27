@@ -51,7 +51,7 @@ Deployed app can be found here: [Inner Force](https://yoda-app-48cdcbb359cb.hero
 	- [Home Page](#home-page)
 - [Technologies Used](#technologies-used)
 	- [Languages Used](#languages-used)
-	- [Frameworks, Libraries & Programs Used ](frameworks-libraries-&-programs-used)
+	- [Frameworks, Libraries & Programs Used ](frameworks-libraries-and-programs-used)
     - [Image Credits](#image-credits)
 	- [Media Credits](#media-credits)
 - [The Team](#the-team)
@@ -197,6 +197,27 @@ As a new user:
 <hr>
 
 ### **Footer**
+
+<p align="center">
+<img src ="static/images/app-screenshots/app-footer-screenshot.png" alt="footer screenshot">
+</p>
+
+The 'Footer' section is consistent with the app branding and colour scheme and provides users with important information that is easily accessible. The inclusion of elements such as a copyright notice, privacy policy, FAQ's and a call to action aligns with the app's theme and adds a delightful touch for users.
+
+ The copyright notice indicates ownership and protection of intellectual property, which in this case identifies the copyright owner: 2024 INNER FORCE. Including the year 2024 reflects the character of the company by informing users that all content is up to date and that there is an active approach to the app development.
+
+The privacy policy is essential to transparently inform users about data handling practices and reassure them of their personal information's confidentiality in a galaxy far, far away.
+
+FAQ's (Frequently Asked Questions) serve to help users navigate the Force-driven journey by providing answers to common questions (e.g. How Can I Use The INNER FORCE App?) and enhancing their overall user experience.
+
+ Lastly, the social media links (Facebook, Instagram, YouTube, Spotify) act as a call to action which encourage users to engage further with the app's content on wider platforms and fosters a sense of exploration and enjoyment.
+
+Overall, the 'Footer' section was thoughtfully crafted to not only provide important information but also to enhance the user experience by staying true to the app's theme and engaging users in a playful and immersive manner.
+
+
+<br>
+
+
 
 <hr>
 
