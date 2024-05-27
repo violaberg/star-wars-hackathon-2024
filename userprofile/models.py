@@ -21,7 +21,7 @@ class UserProfile(models.Model):
 
     def avatar_image(self):
         avatar_paths = {
-            self.PADAWAN: 'images/avatars/padawan.png',
+            self.PADAWAN: 'images/padawan.png',
             self.JEDI_KNIGHT: 'images/jedi_knight.png',
             self.JEDI_MASTER: 'images/jedi_master.png',
         }

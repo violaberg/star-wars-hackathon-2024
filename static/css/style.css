@@ -467,6 +467,12 @@ label {
     color: var(--sith-red);
 }
 
+i.session-back-link.fa-solid.fa-rotate-left {
+    position: absolute;
+    right: 5rem;
+    color: var(--lightsaber-green);
+}
+
 .equal-image {
     width: 100%;
     height: 100%;
@@ -574,7 +580,7 @@ ul {
 /* --------------- */
 /* Media quries */
 @media screen and (max-width: 318px) {
-    .width-fix-href{
+    .width-fix-href {
         width: 100%;
     }
 }
