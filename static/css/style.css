@@ -533,7 +533,11 @@ ul {
 
 /* --------------- */
 /* Media quries */
-
+@media screen and (max-width: 318px) {
+    .width-fix-href{
+        width: 100%;
+    }
+}
 
 /* ----------- Fixed bugs ------------ */
 .row {

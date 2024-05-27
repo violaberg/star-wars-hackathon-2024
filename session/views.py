@@ -2,7 +2,12 @@ from django.shortcuts import redirect, reverse, render
 from .forms import SessionForm
 from .models import Character
 
+
 def session_create(request):
+    """ 
+    A view when user can select a meditation option
+    and redirect to meditation page
+    """
     star_characters = Character.objects.all()
     character_count = star_characters.count()
 
@@ -30,7 +35,11 @@ def session_create(request):
         }
     )
 
+
 def meditation(request):
+    """ 
+    A view where meditation begins
+    """
     character = request.GET.get('character')
     username = request.GET.get('username')
     level = request.GET.get('level')
