@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY", "starwars")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', 
                  '.herokuapp.com','8000-mbilalqures-starwarshac-uilqb8xnm3k.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-lg28lwrwafn.ws-eu114.gitpod.io', '8000-violaberg-starwarshacka-gnztf8bcrxu.ws-eu114.gitpod.io',  '8000-violaberg-starwarshacka-tp7wbsyastc.ws-eu114.gitpod.io']
 
@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'cloudinary',
     'yoda_app',
-    'session'
+    'session',
+    'userprofile',
 ]
 
 SITE_ID = 1
@@ -163,3 +164,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'

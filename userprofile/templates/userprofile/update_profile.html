@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="text-center py-3">Update Profile</h1>
+<div class="profile-container mx-auto p-4 rounded">
+    <div class="row mx-auto">
+        <div class="col-md-8 offset-md-2 text-center">
+            <form method="post" class="form-group rounded">
+                {% csrf_token %}
+                {{ user_form.as_p }}
+                {{ profile_form.as_p }}
+                <button type="submit" class="neon-button-green rounded my-2">Save changes</button>
+            </form>
+            <div class="py-4">
+                <a href="{% url 'profile' %}" class="neon-button-red rounded text-decoration-none">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
