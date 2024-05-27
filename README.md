@@ -32,7 +32,7 @@ Deployed app can be found here: [Inner Force](https://yoda-app-48cdcbb359cb.hero
 
 
 
-![AmIResponsive](static/images/AmIResponsive-PLACEHOLDER.png)
+![AmIResponsive](static/images/app-screenshots/AmIResponsive-INNER-FORCE.png)
 
 # Table of Contents
 
