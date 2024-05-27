@@ -19,7 +19,7 @@ INNER FORCE is a responsive application that immerses users in the galaxy far, f
 
 Our unique meditation app harnesses the cutting-edge Hemi-Sync technology to synchronize your brainwaves and enhance your mindfulness experience. With a galaxy of guided meditations featuring beloved Star Wars characters such as Yoda, Luke Skywalker, and Rey, you'll embark on a journey to inner peace accompanied by iconic sounds from the Star Wars universe.
 
-
+Deployed app can be found here: [Inner Force](https://yoda-app-48cdcbb359cb.herokuapp.com/)
 
 ![AmIResponsive](static/images/AmIResponsive-PLACEHOLDER.png)
 
@@ -117,6 +117,10 @@ All fonts used throughout the application were sourced from [Google Fonts](https
 ## **UX / UI**
 
 ### **User Stories**
+
+As a part of development we used Github Kanban board with user stories, EPICS and MoSCoW method. While we were not perfect using it (because noone is, right), it was a crucial way to keep track on user stories and stay in our galaxy. Days were long and nights were quiet, both full of force, excitement and coffee. <br> Github board can be accessed here: [Github Kanban board](https://github.com/users/violaberg/projects/7)
+
+All user stories can be found here: [Github user stories](https://github.com/violaberg/star-wars-hackathon-2024/issues?q=is%3Aissue+is%3Aclosed)
 
 As a new user:
 - I can create an account so that I can save my progress and access personalized features
