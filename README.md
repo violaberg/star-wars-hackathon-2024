@@ -19,7 +19,6 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/violaberg/star-wars-hackathon-2024?color=yellow&style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/violaberg/star-wars-hackathon-2024?color=green&style=for-the-badge)
 
-
 <hr>
 
 INNER FORCE is a responsive application that immerses users in the galaxy far, far away with guided meditations, authentic Star Wars sound effects, and various meditation styles to promote inner peace and mindfulness.
@@ -29,10 +28,6 @@ Our unique meditation app harnesses the cutting-edge Hemi-Sync technology to syn
 Deployed app can be found here: [Inner Force](https://yoda-app-48cdcbb359cb.herokuapp.com/)
 
 <br>
-
-
-
-![AmIResponsive](static/images/app-screenshots/AmIResponsive-INNER-FORCE.png)
 
 # Table of Contents
 
@@ -49,6 +44,7 @@ Deployed app can be found here: [Inner Force](https://yoda-app-48cdcbb359cb.hero
 	- [Navigation](#navigation)
 	- [Footer](#footer)
 	- [Home Page](#home-page)
+- [Responsiveness](#responsiveness)
 - [Technologies Used](#technologies-used)
 	- [Languages Used](#languages-used)
 	- [Frameworks, Libraries & Programs Used ](frameworks-libraries-and-programs-used)
@@ -176,8 +172,6 @@ As a new user:
 - As a returning user:
  I can log in to my account so that I can continue my meditation practice from where I left off
 
-
-
 ### **Wireframes**
 
 ![Wireframes Index](static/images/wireframes/wireframes-index.png)
@@ -187,13 +181,11 @@ As a new user:
 ![Wireframes Home Page](static/images/wireframes/wireframes-homepage.png)
 <br><br>
 
-
 <hr>
 
 ## **FEATURES**
 
 ### **Navigation**
-
 
 - The navigation bar appears on every page so users can easily navigate through the site.
 - Navigation bar has links for 'Home', 'About' and 'Login/Register' more links will be shown to logged in users.
@@ -208,8 +200,6 @@ As a new user:
 <hr>
 
 ### **Footer**
-
-
 
 - The 'Footer' section is consistent with the app branding and colour scheme and provides users with important information that is easily accessible. The inclusion of elements such as a copyright notice, privacy policy, FAQ's and a call to action aligns with the app's theme and adds a delightful touch for users.
 
@@ -228,7 +218,6 @@ As a new user:
 <img src ="static/images/app-screenshots/app-footer-screenshot.png" alt="footer screenshot">
 </p>
 
-
 <hr>
 
 ### **Home Page**
@@ -238,6 +227,19 @@ As a new user:
 </p>
 
 <hr>
+
+## RESPONSIVENESS
+
+Bootstrap and custom CSS was used to create user friendly and responsive app. Few screenshots can be found below:
+
+<details><summary>Laptop Home Page</summary><img src="static/images/app-screenshots/laptop-home.PNG"></details>
+<details><summary>Laptop Wisdow Page</summary><img src="static/images/app-screenshots/laptop-articles.PNG"></details>
+<details><summary>iPhone XR</summary><img src="static/images/app-screenshots/i-phone-xr.PNG"></details>
+<details><summary>iPhone Max</summary><img src="static/images/app-screenshots/i-phone-max.PNG"></details>
+<details><summary>iPhone Max About Page</summary><img src="static/images/app-screenshots/i-phone-max-about.PNG"></details>
+<details><summary>iPhone 12 Profile Page</summary><img src="static/images/app-screenshots/i-phone-12-profile.PNG"></details>
+<details><summary>iPad</summary><img src="static/images/app-screenshots/i-pad.PNG"></details>
+<details><summary>iPad Team Cards</summary><img src="static/images/app-screenshots/i-pad-team-cards.PNG"></details>
 
 ## TECHNOLOGIES USED
 
