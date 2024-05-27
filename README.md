@@ -3,7 +3,7 @@
 # **INNER FORCE** 
 
 <p align="center">
-<img src ="static/images/yoda-logo-readme.png" width="auto" height="auto" alt="Yoda meditating">
+<img src ="static/images/yoda-logo-readme.png" width="70%" height="70%" alt="Yoda meditating">
 </p>
 
 <br>
@@ -194,34 +194,48 @@ As a new user:
 
 ### **Navigation**
 
+
+- The navigation bar appears on every page so users can easily navigate through the site.
+- Navigation bar has links for 'Home', 'About' and 'Login/Register' more links will be shown to logged in users.
+- If the user is logged in then the left side of the menu shows links for pages that only authorised users can visit. 
+- The user name will also appear on the bar, indicating which user is logged in.
+- The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size.
+<br>
+   <p align="center">
+<img src="static/images/app-screenshots/nav-bar.png" width="auto" height="auto" alt="navigation bar screenshot">
+</p>
+<br>
 <hr>
 
 ### **Footer**
 
+
+
+- The 'Footer' section is consistent with the app branding and colour scheme and provides users with important information that is easily accessible. The inclusion of elements such as a copyright notice, privacy policy, FAQ's and a call to action aligns with the app's theme and adds a delightful touch for users.
+
+- The copyright notice indicates ownership and protection of intellectual property, which in this case identifies the copyright owner: 2024 INNER FORCE. Including the year 2024 reflects the character of the company by informing users that all content is up to date and that there is an active approach to the app development.
+
+- The privacy policy is essential to transparently inform users about data handling practices and reassure them of their personal information's confidentiality in a galaxy far, far away.
+
+- FAQ's (Frequently Asked Questions) serve to help users navigate the Force-driven journey by providing answers to common questions (e.g. How Can I Use The INNER FORCE App?) and enhancing their overall user experience.
+
+- Lastly, the social media links (Facebook, Instagram, YouTube, Spotify) act as a call to action which encourage users to engage further with the app's content on wider platforms and fosters a sense of exploration and enjoyment.
+
+- Overall, the 'Footer' section was thoughtfully crafted to not only provide important information but also to enhance the user experience by staying true to the app's theme and engaging users in a playful and immersive manner.
+
+<br>
 <p align="center">
 <img src ="static/images/app-screenshots/app-footer-screenshot.png" alt="footer screenshot">
 </p>
-
-The 'Footer' section is consistent with the app branding and colour scheme and provides users with important information that is easily accessible. The inclusion of elements such as a copyright notice, privacy policy, FAQ's and a call to action aligns with the app's theme and adds a delightful touch for users.
-
- The copyright notice indicates ownership and protection of intellectual property, which in this case identifies the copyright owner: 2024 INNER FORCE. Including the year 2024 reflects the character of the company by informing users that all content is up to date and that there is an active approach to the app development.
-
-The privacy policy is essential to transparently inform users about data handling practices and reassure them of their personal information's confidentiality in a galaxy far, far away.
-
-FAQ's (Frequently Asked Questions) serve to help users navigate the Force-driven journey by providing answers to common questions (e.g. How Can I Use The INNER FORCE App?) and enhancing their overall user experience.
-
- Lastly, the social media links (Facebook, Instagram, YouTube, Spotify) act as a call to action which encourage users to engage further with the app's content on wider platforms and fosters a sense of exploration and enjoyment.
-
-Overall, the 'Footer' section was thoughtfully crafted to not only provide important information but also to enhance the user experience by staying true to the app's theme and engaging users in a playful and immersive manner.
-
-
-<br>
-
 
 
 <hr>
 
 ### **Home Page**
+
+<p align="center">
+<img src ="static/images/app-screenshots/INNER-FORCE-homepage.png" alt="homepage screenshot">
+</p>
 
 <hr>
 
