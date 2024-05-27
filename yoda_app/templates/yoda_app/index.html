@@ -18,9 +18,16 @@
                 <img src="{% static 'images/logo.png' %}" alt="Yoda meditating" class="hero-img mx-auto img-fluid">
                 <h1 class="brand-name mt-4">INNER<br>FORCE</h1>
                 <h2 class="mt-2">Meditate like a Jedi</h2>
+                {% if user.is_authenticated %}
                 <a type="submit" href="{% url 'session_create' %}"
                     class="neon-button-blue btn-lg hvr-grow text-uppercase rounded text-decoration-none p-3 mb-5 mt-5">Start
                     Session</a>
+                {% else %}
+                <a type="submit" href="{% url 'account_signup' %}"
+                    class="neon-button-blue btn-lg hvr-grow text-uppercase rounded text-decoration-none p-3 mb-5 mt-5 me-4 width-fix-href">sign up</a>
+                <a type="submit" href="{% url 'account_login' %}"
+                    class="neon-button-green btn-lg hvr-grow text-uppercase rounded text-decoration-none p-3 mb-5 mt-5 width-fix-href">sign in</a>
+                {% endif %}
             </div>
         </div>
     </div>

@@ -1,22 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let audio = document.getElementById('background-audio');
-    let playButton = document.getElementById('play-button');
-    let stopButton = document.getElementById('stop-button');
-    let resetButton = document.getElementById('reset-button');
-    playButton.addEventListener('click', function () {
-      audio.play();
-    });
-    stopButton.addEventListener('click', function () {
-      audio.pause();
-    });
-    resetButton.addEventListener('click', function() {
-        audio.currentTime = 0;
-        audio.play();
-    });
-});
-
-
 document.addEventListener("DOMContentLoaded", function() {
+  // Stars setup
   const starsContainer = document.querySelector('.stars');
   const numStars = 500;
 
@@ -28,5 +11,27 @@ document.addEventListener("DOMContentLoaded", function() {
       star.style.animationDelay = `${Math.random() * 2}s`;
       star.style.animationDuration = `${Math.random() * 2 + 2}s`;
       starsContainer.appendChild(star);
+  }
+
+  // Audio setup
+  let audio = document.getElementById('background-audio');
+  let playButton = document.getElementById('play-button');
+  let stopButton = document.getElementById('stop-button');
+  let resetButton = document.getElementById('reset-button');
+  if(playButton){
+    playButton.addEventListener('click', function () {
+      audio.play();
+    });
+  }
+  if(stopButton){
+    stopButton.addEventListener('click', function () {
+      audio.pause();
+    });
+  }
+  if(resetButton){
+  resetButton.addEventListener('click', function() {
+      audio.currentTime = 0;
+      audio.play();
+  });
   }
 });
