@@ -3,7 +3,7 @@
 # **INNER FORCE** 
 
 <p align="center">
-<img src ="static/images/yoda-logo-readme-PLACEHOLDER.png" width="300px" height="300px" alt="Yoda meditating">
+<img src ="static/images/yoda-logo-readme.png" width="auto" height="auto" alt="Yoda meditating">
 </p>
 
 <br>
