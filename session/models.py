@@ -2,14 +2,16 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+
 class Session(models.Model):
+    """
+    User sessions model
+    """
     DIFFICULTY = [
-        (0, 'Easy'),
-        (1, 'Medium'),
-        (3, 'Hard'),
+        (0, 'Padawan'),
+        (1, 'Jedi Knight'),
+        (3, 'Jedi Master'),
     ]
-    # session_name = models.CharField(max_length=200, unique=True)
-    # slug = models.SlugField(max_length=200, unique=True)
     session_user = models.ForeignKey(
     User, on_delete=models.CASCADE, related_name="user_sessions")
     character = models.CharField(max_length=200, blank=False)
@@ -24,7 +26,11 @@ class Session(models.Model):
     def __str__(self):
         return f"Session user {self.session_user}"
 
+
 class Character(models.Model):
+    """
+    Star wars Characters model
+    """
     name = models.CharField(max_length=200, unique=True)
     description = models.TextField(blank=True)
     image = CloudinaryField('image', default='placeholder')
