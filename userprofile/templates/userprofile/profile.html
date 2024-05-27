@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="text-center pb-3">{{ user.username }}'s Profile</h1>
+<div class="mx-auto">
+    <img src="{% static user.userprofile.avatar_image %}" class="profile-img img-fluid rounded" alt="{{ user.userprofile.get_avatar_display }} avatar">
+</div>
+    <p><strong>Level:</strong> {{ user.userprofile.get_avatar_display }}</p>
+
+    <h2 class="text-center">Meditation History</h2>
+    <ul>
+        {% for session in meditation_sessions %}
+        <li>{{ session.session_name }} ({{ session.completed_at }})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'update_profile' %}" class="neon-button-blue btn rounded">Edit Profile</a>
+    {% endblock %}

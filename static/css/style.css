@@ -359,7 +359,7 @@ p>span {
 .card-deck {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     justify-content: center;
 }
 
@@ -528,6 +528,12 @@ label {
 
 .modal-card {
     background-color: var(--void-grey);
+}
+
+/* Profile */
+.profile-img {
+    border: 2px solid var(--droid-silver);
+    width: 50%;
 }
 
 /* Privacy Policy page */
