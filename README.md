@@ -2,8 +2,9 @@
 
 # **INNER FORCE** 
 
-
-<center><img src ="static/images/yoda-logo-readme-PLACEHOLDER.png" width="300px" height="300px" alt="Yoda meditating"></center>
+<p align="center">
+<img src ="static/images/yoda-logo-readme-PLACEHOLDER.png" width="300px" height="300px" alt="Yoda meditating">
+</p>
 
 <br>
 
@@ -13,6 +14,12 @@
 
 <br>
 
+![GitHub last commit](https://img.shields.io/github/last-commit/violaberg/star-wars-hackathon-2024?color=red&style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/violaberg/star-wars-hackathon-2024?color=orange&style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/violaberg/star-wars-hackathon-2024?color=yellow&style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/violaberg/star-wars-hackathon-2024?color=green&style=for-the-badge)
+
+
 <hr>
 
 INNER FORCE is a responsive application that immerses users in the galaxy far, far away with guided meditations, authentic Star Wars sound effects, and various meditation styles to promote inner peace and mindfulness.
@@ -21,7 +28,35 @@ Our unique meditation app harnesses the cutting-edge Hemi-Sync technology to syn
 
 Deployed app can be found here: [Inner Force](https://yoda-app-48cdcbb359cb.herokuapp.com/)
 
+<br>
+
+
+
 ![AmIResponsive](static/images/AmIResponsive-PLACEHOLDER.png)
+
+# Table of Contents
+
+- [Criteria](#criteria)
+- [About Submission](#about-submission)
+    - [Dark Side Dev's Team Goal](#dark-side-devs-team-goal)
+- [Design](#design)
+	- [Colours](#colours)
+    - [Typography](#typography)
+- [UX / UI](#UX/UI)
+	- [User Stories](#user-stories)
+	- [Wireframes](#wireframes)
+- [Features](#features)
+	- [Navigation](#navigation)
+	- [Footer](#footer)
+	- [Home Page](#home-page)
+- [Technologies Used](#technologies-used)
+	- [Languages Used](#languages-used)
+	- [Frameworks, Libraries & Programs Used ](frameworks-libraries-&-programs-used)
+    - [Image Credits](#image-credits)
+	- [Media Credits](#media-credits)
+- [The Team](#the-team)
+- [Credits](#credits)
+
 
 <br>
 
@@ -33,10 +68,11 @@ Our team addressed the following Hackathon criteria with innovative solutions:
 - The project uses **Star Wars sound effects**.  
 - Project demonstrates **responsiveness**, **accessibility**, and thorough **testing**.
 - Fun and entertaining **presentation**.  
-
+<br>
 <hr>
 
 # **ABOUT SUBMISSION**
+<br>
 
 ## **'Dark Side Devs' Team Goal**
 We aim to:
@@ -158,8 +194,6 @@ As a new user:
 
 ### **Navigation**
 
-### **Mobile Navigation**
-
 <hr>
 
 ### **Footer**
@@ -169,9 +203,6 @@ As a new user:
 ### **Home Page**
 
 <hr>
-
-## **TESTING**
-
 
 ## TECHNOLOGIES USED
 
@@ -197,6 +228,8 @@ As a new user:
 
 - [![Summernote](https://img.shields.io/badge/Summernote-orange?logo=summernote&logoColor=white)](https://summernote.org/) - Summernote is a Django app that enables users to easily integrate a rich text editor into their web applications, enhancing event creation and description functionality. 
 
+- [![Microsoft ClipChamp](https://img.shields.io/badge/Microsoft_ClipChamp-0078D4?logoColor=white)](https://clipchamp.com/en/windows-video-editor/) - Microsoft ClipChamp is a powerful video editing tool that offers a seamless and user-friendly editing experience. Used for video editing.
+
 - [![TinyPNG](https://img.shields.io/badge/TinyPNG-grey?logo=tinypng&logoColor=CE0908)](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimise image files for faster loading on webpages while maintaining visual quality. Used to Compress the images.
 
 - [![Google Fonts](https://img.shields.io/badge/Google_Fonts-blue?logo=google-fonts&logoColor=white)](https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography. Imported for fonts.
@@ -207,11 +240,36 @@ As a new user:
 
 - [![Am I Responsive](https://img.shields.io/badge/Am_I_Responsive-blue?logoColor=white)](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sises, helping to ensure responsiveness and compatibility across platforms. Put my heroku url to check responsivity to all devices.
 
+- [![Coolors Color Palette](https://img.shields.io/badge/Coolors%20Color%20Palette-blue)](https://coolors.co/) - Coolors.co is a online platform for creating and exploring color palettes for design projects. Used to create a Star Wars themed color palette for our application.
+
+- [![Privacy Policy Generator](https://img.shields.io/badge/Privacy%20Policy%20Generator-green)](https://www.privacypolicygenerator.info/) - Tool used for generating a privacy policy for use on websites and application.
+
 - [![Diffchecker](https://img.shields.io/badge/Diffchecker-grey?logo=diffchecker&logoColor=white)](https://www.diffchecker.com/text-compare/) - Diffchecker is a text comparison tool used to highlight the differences between two blocks of text, facilitating comparison and analysis. Update my code against old code for validation.
 
 - [![W3C CSS Validator](https://img.shields.io/badge/W3C_CSS_Validator-grey?logo=css3&logoColor=white)](https://jigsaw.w3.org/css-validator/) - The W3C CSS Validator is a tool used to check the validity and syntax of CSS code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my CSS for validation.
 
 - [![W3C Markup Validator](https://img.shields.io/badge/W3C_Markup_Validator-grey?logo=html5&logoColor=white)](https://validator.w3.org/#validate_by_input) - The W3C Markup Validator is a tool used to check the validity and syntax of HTML code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my html for validation.
+
+## Image Credits
+
+Image Credits:
+- https://www.linkedin.com/pulse/silva-method-rehan-siddiqui/ (The Silva Method)
+- https://www.danvilleyogawellnesscenter.com/qigong-moving-meditation (Qigong)
+- https://youtu.be/HOFq3ruef7I?si=3gEBUTjyMwuFQjNV (The Gateway Experience)
+- https://networkmagazine.ie/articles/alexander-technique-way-life (Alexander Techniques)
+- https://blog.mindvalley.com/quantum-jumping/ (Quantum Jumping)
+- https://www.linkedin.com/pulse/water-frequency-effects-has-your-health-crystal-sun/ (Sound Meditations)
+
+## Media Credits
+
+Media Credits:
+
+- https://www.youtube.com/watch?v=ZY_PmJX6dAo (Starry Sky Background).
+- https://www.youtube.com/watch?v=l-1ZrU6avzI (Breathing Circle Animation from Traversy Media)
+- https://wallpapers.com/wallpapers/star-wars-3440x1440-2uf5to0h0yrjwcdy/download (Star Wars Wallpaper)
+- https://www.chosic.com/free-music/all/ (Music)
+- https://purrplecat.com/ (Music)
+- https://pixabay.com/sound-effects/search/star-wars (Star Wars Sound Effects)
 
 <br>
 
@@ -249,16 +307,3 @@ Special thanks to:
 
 - **CodeInstitute** for organizing the Hackathon.
 
-- https://www.youtube.com/watch?v=ZY_PmJX6dAo reference for starry sky background on the contact page from Divinector.
-
-- https://www.youtube.com/watch?v=l-1ZrU6avzI for breathing circle from Traversy Media.
-
-- Star Wars wallpaper: https://wallpapers.com/wallpapers/star-wars-3440x1440-2uf5to0h0yrjwcdy/download
-
-- Music from https://www.chosic.com/free-music/all/
-
-- Music from https://purrplecat.com/
-
-- Sound effects from https://pixabay.com/sound-effects/search/star-wars
-
-[def]: images/AmIResponsive-PLACEHOLDER.png
