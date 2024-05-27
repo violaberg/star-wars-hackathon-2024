@@ -9,7 +9,8 @@
 <div class="container my-3 back">
     <h1 class="text-center">Start Your Meditation</h1>
     <div class="background-op p-3 mt-5 rounded">
-        <p class="session-character"><span class="meditation-span">Character:</span> {{ character }} <a href="{% url 'session_create' %}" class="text-decoration-none"><i class="session-back-link fa-solid fa-rotate-left"></i></a></p>
+        <a href="{% url 'session_create' %}" class="meditation-instructions2"><i class="fa-solid fa-arrow-left"></i></a>
+        <p class="session-character"><span class="meditation-span">Character:</span> {{ character }} </p>
         <p class="session-user"><span class="meditation-span">Username:</span> {{ username }}</p>
         <p class="session-level"><span class="meditation-span">Level:</span> {{ level }}</p>
         <p class="session-name">
