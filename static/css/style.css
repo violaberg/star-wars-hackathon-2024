@@ -532,8 +532,29 @@ label {
 
 /* Profile */
 .profile-img {
-    border: 2px solid var(--droid-silver);
+    background-color: var(--galactic-blue);
+    border: 3px solid var(--droid-silver);
+    width: 66%;
+}
+
+.profile-container {
     width: 50%;
+}
+
+input,
+select {
+    background: var(--starfield-white);
+    padding: 0.3rem;
+    width: 50%;
+}
+
+.profile-level {
+    color: var(--tatooine-yellow);
+    font-size: 20px;
+}
+
+.level-cat {
+    color: var(--blaze-orange);
 }
 
 /* Privacy Policy page */
